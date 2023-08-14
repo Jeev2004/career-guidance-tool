@@ -50,20 +50,22 @@ nav .menu{
   transition: all 0.3s ease;
 }
 .menu ul li a:hover{
+    top: 20px;
+    bottom: 100px; ;
   background: #fffdfa;
   color: black;
 }
 
 .center{
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 0 20px;
   text-align: center;
 }
-.center .role1{
+.role1{
     position: relative;
     top: 60%;
     bottom: 100%;
@@ -80,7 +82,7 @@ nav .menu{
   
   
 }
-.center .role2{
+.role2{
     position: relative;
     top: 60%;
     text-align: center;
@@ -96,7 +98,7 @@ nav .menu{
   
   
 }
-.center .role3{
+.role3{
     position: relative;
     top: 60%;
     text-align: center;
@@ -112,9 +114,10 @@ nav .menu{
 }
   
 
-.center.links{
-    size: 20px;
+.links{
+    font-size: 30px;
     color: #050505;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
