@@ -21,4 +21,4 @@ DAY 4:
 -> Creation of Results page.
 
 DAY 5:
--> Creation of information page.
+-> Creation of information page
