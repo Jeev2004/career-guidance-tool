@@ -22,3 +22,10 @@ DAY 4:
 
 DAY 5:
 -> Creation of information page
+
+DAY 6:
+-> Django work started
+-> created a joblib file and added to backend
+-> connected frontend to back
+-> dataset for computer science is beign created
+
