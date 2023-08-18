@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+   <script src="https://kit.fontawesome.com/04f28313cf.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <body >
+        <nav>
+        <div class="menu">
+        <div class="logo">
+        <a href="#">PathPilot</a>
+        </div>
+        <ul>
+        <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+        </ul>
+        </div>
+        </nav>
+    <div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<!--<div class="social-container">
+			    ---<a href="#" class="social"><i class="fab fa-facebook" style="color: black;"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>-->
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" id="name" />
+			<input type="email" placeholder="Email" id="email" />
+			<input type="password" placeholder="Password" id="password" />
+			<button id="sinup">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<!--<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>-->
+			<input type="email" placeholder="Email" id="" />
+			<input type="password" placeholder="Password" id="\" />
+			<a href="#">Forgot your password?</a>
+			<button id="login">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp" id="sub-btn">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getDatabase,set,ref,update} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyAX1BKZNIiMh8y3ycaqPJvg6oXCm4HImPI",
+      authDomain: "career-guidance-tool.firebaseapp.com",
+      databaseURL: "https://career-guidance-tool-default-rtdb.firebaseio.com",
+      projectId: "career-guidance-tool",
+      storageBucket: "career-guidance-tool.appspot.com",
+      messagingSenderId: "402228945342",
+      appId: "1:402228945342:web:670bf14e0f7b6ee13159ef"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    
+    const database = getDatabase(app);
+    const auth = getAuth();  
+
+    sinup.addEventListener('click',(e)=>{
+
+   var email = document.getElementById('email').value;
+   var password = document.getElementById('password').value;
+   var name = document.getElementById('name').value;
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    set(ref(database,'users/'+ user.uid),{
+        name : name,
+        email:email
+    })
+    alert('registered');
+
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    // ..
+  });
+});
+login.addEventListener('click',(e)=>{
+    var email = document.getElementById('email').value;
+   var password = document.getElementById('password').value;
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    const dt = new Date();
+    update(ref(database,'users/'+ user.uid),{
+        last_login : dt,
+    })
+    // ...
+    alert('User Logged!');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+
+});
+  </script>
+</body>
+<script src="login.js"></script>
+
+</html>

@@ -1,10 +1,11 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career | questions</title>
-    <link rel="stylesheet" href="questions.css">
+    <link rel="stylesheet" href="{%static 'css/questions.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
 <body style="background-color:rgb(196, 181, 160);">
@@ -15,30 +16,32 @@
       </div>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Feedback</a></li>
       </ul>
     </div>
-  </nav> 
+  </nav>
+  <form method="post">
+    {% csrf_token %}
   <div class="center">
     <div class="Ques"><h1>Rate Yourself</h1>
-      <div class="Q1"><h2>How skilled are you in Control Systems ?</h2></div>
-       <div class="drop"><label for="language"></label>
-        <select name="Rate" id="Rate">
-           <option value="Professional">Professional</option>
-           <option value="Excellent">Excellent</option>
-           <option value="Intermediate">Intermediate</option>
-           <option value="Average">Average</option>
-           <option value="Beginner">Beginner</option>
-           <option value="Poor">Poor</option>
-        </select></div>
+      <div class="Q1"><h2>How skilled are you in Electrical Systems ?</h2></div>
+       <div class="drop"><label for="power_electronics">{{ form.category }}</label>
+        <!--<select name="circuit_design" id="circuit_design">
+           <option value="5">Professional</option>
+           <option value="4">Excellent</option>
+           <option value="3">Intermediate</option>
+           <option value="2">Average</option>
+           <option value="1">Beginner</option>
+           <option value="0">Poor</option>
+        </select>--></div>
   </div>
   </div>
+
   <div class="wrapper">
     <div class="link_wrapper">
-        <a href="#"class="next">NEXT</a>
+        <button class="next" >NEXT</button>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
               <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
@@ -46,11 +49,19 @@
           </div>
     </div>
   </div>
-  <footer>
-        <a href="#"><i class="fa-brands fa-twitter "style="color: black;"></i></i></a>
-        <a href="#"><i class="fa-brands fa-facebook "style="color: black;"></i></i></a>
-        <a href="#"><i class="fa-brands fa-github "style="color: black;"></i></a>
-  </footer>
-    
+
+  <!--<footer>
+        <a href="#"><i class="fab fa-facebook" style="color: rgb(64, 65, 47);" ></i></a>
+        <a href="#"><i class="fab fa-twitter" style="color: rgb(64, 65, 47);"></i></a>
+        <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" style="color: rgb(64, 65, 47);"></i></a>
+  </footer>-->
+</form> 
+   
+  <script>
+    function myFunction() {
+      location.replace("{% url 'q8'%}")
+    }
+    </script>
+
 </body>
 </html>

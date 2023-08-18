@@ -149,13 +149,3 @@ select:focus{
   border: 3px solid #000000;
   right: -25%;
 }
-
-footer{
-  font-size: 30px;
-  color: #050505;
-  position: absolute;
-  margin-top: 22em;
-  margin-bottom: 100px;
-  margin-left: 24em;
-
-}

@@ -1,9 +1,10 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
    <script src="https://kit.fontawesome.com/04f28313cf.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -17,8 +18,7 @@
         </div>
         <ul>
         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Feedback</a></li>
         </ul>
@@ -129,6 +129,7 @@ login.addEventListener('click',(e)=>{
     })
     // ...
     alert('User Logged!');
+    window.location.assign("{% url 'main'%}");
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -139,6 +140,6 @@ login.addEventListener('click',(e)=>{
 });
   </script>
 </body>
-<script src="scripts.js"></script>
+<script src="{% static 'js/login.js'%}"></script>
 
 </html>
