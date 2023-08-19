@@ -21,5 +21,7 @@ def prediction(circuit_design,control_systems,power_electronics,analog_communica
         return b
 def printf(data):
         print(data)
-a = "hi"
-printf(a)
+
+def send(lst):
+        prediction(lst[0],lst[1],lst[2],lst[3],lst[4],lst[5],lst[6],lst[7],lst[8],lst[9])
+        
