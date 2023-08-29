@@ -1,15 +1,120 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10
+from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,cs1,cs2,cs3,cs4,cs5,cs6,cs7,cs8
 from .forms import question
-from .code import prediction,send
+from .code import send,sendcs
 import logging
 logger = logging.getLogger(__name__)
 lst =[]
+clst=[]
 def login(request):
     return render(request,'login.html')
 def main(request):
-    return render(request,'main.html')
+    return render(request,'index.html')
+def check(request):
+    if request.method == 'POST':
+        choice = request.POST.get('check')
+        print(choice)
+        if(choice == '1'):
+            return redirect('q1')
+        else:
+            return redirect('c1')
+    return render(request,'check.html')
+def c1(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            data_base = form.cleaned_data['category']
+            clst.append(data_base)
+            a = cs1(data_base=data_base)
+            a.save()
+            return redirect('c2')
+    form = question()
+    return render(request,'c1.html',{'form':form})
+def c2(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            c_architecture = form.cleaned_data['category']
+            clst.append(c_architecture)
+            a = cs2(c_architecture=c_architecture)
+            a.save()
+            return redirect('c3')
+    form = question()
+    return render(request,'c2.html',{'form':form})
+    
+def c3(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            cyber_security = form.cleaned_data['category']
+            clst.append(cyber_security)
+            a = cs3(cyber_security=cyber_security)
+            a.save()
+            return redirect('c4')
+    form = question()
+    return render(request,'c3.html',{'form':form})
+def c4(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            networking = form.cleaned_data['category']
+            clst.append(networking)
+            a = cs4(networking=networking)
+            a.save()
+            return redirect('c5')
+    form = question()
+    return render(request,'c4.html',{'form':form})
+def c5(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            software_development = form.cleaned_data['category']
+            clst.append(software_development)
+            a = cs5(software_development=software_development)
+            a.save()
+            return redirect('c6')
+    form = question()
+    return render(request,'c5.html',{'form':form})
+def c6(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            ai_ml = form.cleaned_data['category']
+            clst.append(ai_ml)
+            a = cs6(ai_ml=ai_ml)
+            a.save()
+            return redirect('c7')
+    form = question()
+    return render(request,'c6.html',{'form':form})
+def c7(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            graphics_designer = form.cleaned_data['category']
+            clst.append(graphics_designer)
+            a = cs7(graphics_designer=graphics_designer)
+            a.save()
+            return redirect('c8')
+    form = question()
+    return render(request,'c7.html',{'form':form})
+
+def c8(request):
+    if request.method == 'POST':
+        form = question(request.POST)
+        if form.is_valid():
+            data_science = form.cleaned_data['category']
+            clst.append(data_science)
+            a = cs8(data_science=data_science)
+            a.save()
+            print(clst)
+            cs = sendcs(clst)
+            context = {}
+            context['cs'] = cs
+            return render(request,'output.html',context)
+    form = question()
+    return render(request,'c8.html',{'form':form})
+    
 def q1(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -125,12 +230,16 @@ def q10(request):
             a = s10(Lab_View=Lab_View)
             a.save()
             print(lst)
-            send(lst)
-            return redirect('output')
+            c = send(lst)
+            context = {}
+            context['c'] = c
+            return render(request,'output.html',context)
+            
     form = question()
     return render(request,'q10.html',{'form':form})
-def output(request):
-    return render(request,'output.html')
+def map(request):
+
+    return render(request,'map.html')
 
 
 

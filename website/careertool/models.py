@@ -23,3 +23,19 @@ class s9(models.Model):
     P_C_B = models.IntegerField(default=0, null=True)
 class s10(models.Model):
     Lab_View = models.IntegerField(default=0, null=True)
+class cs1(models.Model):
+    data_base = models.IntegerField(default=0, null=True)
+class cs2(models.Model):
+    c_architecture = models.IntegerField(default=0, null=True)
+class cs3(models.Model):
+    cyber_security = models.IntegerField(default=0, null=True)
+class cs4(models.Model):
+    networking = models.IntegerField(default=0, null=True)
+class cs5(models.Model):
+    software_development = models.IntegerField(default=0, null=True)
+class cs6(models.Model):
+    ai_ml = models.IntegerField(default=0, null=True)
+class cs7(models.Model):
+    graphics_designer = models.IntegerField(default=0, null=True)
+class cs8(models.Model):
+    data_science = models.IntegerField(default=0, null=True)

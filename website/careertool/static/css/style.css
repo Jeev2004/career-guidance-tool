@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+@import url('https://fonts.googleapis.com/css?family=Cinzel Decorative');
+*{
+    font-family: Oxanium;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 50px 10px;
+    margin-right: 50px;
+
+    
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #c7faa2;
+    position:absolute;
+    left: 0;
+    bottom: -6px ;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header span::before {
+    content: "SUCCESS";
+    animation: animate infinite 3s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "VICTORY";
+    }
+
+    50% {
+        content: "FORTUNE";
+    }
+
+    75% {
+        content: "PASSION";
+    }
+}
+.header img{
+    margin-left: 15em;
+    margin-top: 3em;
+    box-shadow: 5px 5px 3px  white;
+}
+.header h2{
+    font-family: Cinzel Decorative;
+}
+button,button::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    left: 32em;
+    top: 6em;
+  }
+  
+  button::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'GLITCH';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  button:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #c7faa2, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid #c7faa2;
+  }
+  
+  button:hover {
+    text-shadow: -1px -1px 0px #c7faa2, 1px 1px 0px #E94BE8;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    border: 1px solid #c7faa2;
+    box-shadow: 0px 10px 10px -10px #c7faa2;
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+.header{
+    margin-top: 10em;
+}
+.two img{
+    margin-top: 7em;
+    margin-left: 2em;
+}
+.right{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    left: 50rem;
+    top: 60em;
+}
+.three img{
+    margin-top: 5em;
+    margin-left: 50em ;
+}
+.left{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    left: 10em;
+    top: 95em;
+}
+
+.form-container {
+    margin-left: 550px;
+    width: 400px;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 300px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #31312a;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 80%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: black;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #1d1c1c;
+  }
+  
+  .form-container .form-group textarea {
+    width: 80%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: black;
+    height: 96px;
+    border: 1px solid #0f0f0f;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+ 
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+    background: black;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: black;
+    border-color: black;
+  }
+  
+  .fb{
+    font-size: xx-large;
+    position: absolute;
+    top: 73em;
+    margin-left: 2em;
+    color: black;
+  }
+  .links{
+    font-size: 30px;
+    color: #050505;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1200px;
+    width: 20%;
+}
+.links a{
+    position: relative;
+    top: 1.5em;
+}
+.pp a{
+    text-decoration: none;
+    color: #050505;
+    position: relative;
+    top: 3em;
+    left: 3.5em;
+    font-weight: 600;
+    font-size: x-large;
+    width: 20%;
+}

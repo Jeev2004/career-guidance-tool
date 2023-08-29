@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/main.css'%}">
     <script src="https://kit.fontawesome.com/04f28313cf.js" crossorigin="anonymous"></script>
-    <title>MAIN PAGE</title>
+    <title>PathPilot</title>
 </head>
 <body><!--
     <header class="header">
@@ -33,7 +33,8 @@
         </div>
       </nav>
       <main>
-        <img src="{% static 'img/mainpageimg.jpg'%}" class="image" width="500" height="600">
+        <!--<img src="{% static 'img/mainpageimg.jpg'%}" class="image" width="500" height="600">-->
+        <img src="{% static 'img/bg.jpg'%}" class="" width="1519" height="1000" >
         <div>
         <p class="maintext">WORRIED ABOUT WHAT NEXT?</p>
         
@@ -41,15 +42,73 @@
             <p>TAKE QUIZ</p>
           </button></div>
       </main>
+
+    </div>
+    <div class="center">
+      <div class="circle1"></div>
+      <div class="role1"><h1>WELCOME TO PathPilot</h1>
+        <div class="det1">We navigate you to the world of career choices and professional growth.
+          We believe that everyone deserves a fulling and successful career.We unveil your perfect career path .</div>
+      </div> 
+      <div class="circle2"></div>
+      <div class="role2"><h1>WHY CHOOSE PathPilot??</h1>
+          <div class="det2">We provide access to a wealth of information about various industries,job roles
+          and career trajectories.Our insights are designed to help you to explore the world of career and
+        understand the demands and oppurtunities in different fields </div>
+          </div>
+      <div class="circle3"></div>
+      <div class="role3"><h1>ABOUT US</h1>
+          <div class="det3">Firmware engineers design, install,
+              and troubleshoot firmware systems and their components.
+              They play an active role in every phase of the firmware development cycle,
+              and must be prepared to adapt systems quickly to meet rapidly changing business needs.</div>
+      </div>
+
+      <div class="form-container">
+        <form class="form">
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="text" id="email" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="textarea">Thoughts . . </label>
+            <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="fb"><h1>Let us know . . .</h1></div>
       <footer class="foot">
-        <a href=""><i class="fa-brands fa-instagram" style="color: rgb(196, 181, 160);"></i></a>
-        <a href="https://github.com/mohankumar003-1"><i class="fa-brands fa-github" style="color:rgb(196, 181, 160)" width="200px"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter" style="color: rgb(196, 181, 160)"></i></footer></a>
+        <a href=""><i class="fa-brands fa-instagram" style="color:black;"></i></a>
+        <a href="https://github.com/mohankumar003-1"><i class="fa-brands fa-github" style="color:black" width="200px"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" style="color: black"></i></footer></a>
+
+        <div class="typing-indicator" id="load">
+          <div class="typing-circle" ></div>
+          <div class="typing-circle"></div>
+          <div class="typing-circle"></div>
+          <div class="typing-shadow"></div>
+          <div class="typing-shadow"></div>
+          <div class="typing-shadow"></div>
+      </div>
     
         <script>
           function myFunction() {
-            location.replace("{% url 'q1'%}")
+            location.replace("{% url 'check'%}")
           }
+          
+          document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
           </script>
 </body>
 </html>

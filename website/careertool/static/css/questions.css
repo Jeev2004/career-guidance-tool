@@ -4,14 +4,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  
 }
 ::selection{
   color: rgb(196, 181, 160);;
   background: rgb(10, 6, 0);;
 }
+body{
+  background-color: linear-gradient(black,white);
+}
 nav{
   position: fixed;
-  background: rgb(150, 130, 101);;
+  background: black;
   width: 100%;
   padding: 10px 0;
   z-index: 12;
@@ -27,7 +31,7 @@ nav .menu{
 }
 .menu .logo a{
   text-decoration: none;
-  color: rgb(15, 15, 15);;
+  color: white;
   font-size: 35px;
   font-weight: 600;
 }
@@ -43,7 +47,7 @@ nav .menu{
 }
 .menu ul li a{
   text-decoration: none;
-  color: #050505;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
@@ -81,7 +85,7 @@ select{
   border:none;
   padding: 10px 30px;
   border-radius:5px;
-  background-color: rgb(150, 130, 101);
+  background-color: #c7faa2;
 }
 
 select:focus{

@@ -1,0 +1,81 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>PathPilot</title>
+</head>
+<body>
+    <div class="main"style="background:black; height: 755px; width: 1518px;">
+       
+        <nav>
+            <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+            <ul >
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+                <li><a href="#login">LOGIN</a></li>
+            </ul>
+          </nav> 
+          <div class="header">
+            <h1 style="color: #c7faa2; margin-left: 15em; margin-top: 2em; ">DISCOVER YOUR PATH TO <span></span></h1>
+            <h2 style="color: white; margin-left: 46em; margin-top: 2em; font-size: small;">Unlock your potential with PathPilot</h2>
+            <button  onclick="myFunction()">
+                TAKE TEST
+            </button>
+          </div>
+       
+    </div>
+    <div class="two" style="background: #c7faa2; height: 600px; width: 1518px;">
+        <img src="{% static 'img/next.jpg'%}" height=400px width=600px>
+        <div class="two right">
+            <h1>What we Do?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div class="three" style="background: #fff; height: 550px; width: 1518px;">
+        <img src="{% static 'img/three.jpg'%}" height=400px width=600px>
+        <div class="two left">
+            <h1>How we did it?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div style="background: #c7faa2; height: 386px; width: 1518px;">
+        <img src="{% static 'img/four.jpg'%}" width="1518px">
+    </div>
+    <div class="five" style="background: white; height: 500px; width: 1518px;">
+        
+<div class="form-container" style="margin-top: 10em;">
+    <form class="form">
+      <div class="form-group">
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="textarea">Thoughts . . </label>
+        <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+      </div>
+      <button class="form-submit-btn" type="submit" style="margin-left: -25em; margin-top: -2em;">Submit</button>
+    </form>
+</div>
+<div class="fb"><h1>Let us know . . .</h1></div>
+    </div>
+   
+    <div class="last" style="background: #eceff3ff; height: 150px; width: 1518px;">
+        <div class="pp"><a href="#main">PathPilot</a></div>
+        <div class="links">
+            <a href="#"><i class="fab fa-facebook" style="color: rgb(0, 0, 0);" ></i></a>
+            <a href="#"><i class="fab fa-twitter" style="color: rgb(0, 0, 0);"></i></a>
+            <a href="#"><i class="fab fa-github" style="color: rgb(0, 0, 0);"></i></a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            location.replace("{% url 'check'%}")
+          }
+    </script>
+</body>
+</html>

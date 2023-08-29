@@ -23,25 +23,392 @@
     </div>
   </nav>
   <div class="center">
-    <div class="role1"><h1>C++ Developer</h1>
-      <div class="det1">Developing software and overseeing
-      the deployment of applications across platforms.
-      Performing diagnostic tests and debugging procedures. 
-      Creating end-user application feedback channels. 
-      Optimizing software by performing maintenance, updates, and upgrades.</div>
-    </div> 
-    <div class="role2"><h1>Embedded Software Engineer</h1>
+    {% if c == 0 %}
+    <div class="role1"><h1>Hardware Electronics Design Engineer</h1>
+      
+      <div class="det1">Design and develop components such as circuit boards and processors for computers and other devices. They work closely with software engineers to create new components, conduct tests on prototypes, and oversee the manufacturing process of a variety of hardware components.</div>
+      </div> 
+    {% elif c == 1 %}
+    <div class="role1"><h1> Industrial Automation</h1>
+      
+      <div class="det1">As an industrial automation engineer, your responsibilities include troubleshooting systems and equipment and maintaining software, robotics, and machinery in a manufacturing facility. 
+      </div>
+      </div> 
+      {% elif c == 2 %}
+      <div class="role1"><h1>Embedded C++ Developer</h1>
+        
+        <div class="det1">Design, build, and maintain efficient embedded systems using C++. Ensure the best possible performance, quality, and responsiveness of applications. Identify bottlenecks and bugs, and devise solutions to mitigate and address those issues. </div>
+        </div>  
+      {% elif c == 3 %}
+        <div class="role1"><h1>Senior Application Engineer</h1>
+          
+          <div class="det1">Senior applications engineer provides assistance to other software engineers in resolving complex production problems on any in-house software application, across multiple hardware platforms and programming languages. 
+          </div>
+          </div>  
+          {% elif c == 4 %}
+          <div class="role1"><h1>IT / Technical Operations Specialist</h1>
+            
+            <div class="det1">Some of the duties and responsibilities that you perform as a technical operations specialist include tracking and analyzing various operations reports, identifying customer needs to better meet them, and developing and
+              implementing various improvement plans so that the company can operate more efficiently and profitably.</div>
+            </div>  
+            {% elif c == 5 %}
+            <div class="role1"><h1> Labview Engineer</h1>
+              
+              <div class="det1">Works with testing equipment to develop user friendly software. Take on various engineering tasks which will help to acquire new skills. Design software architecture and optimize the performance. Data acquisition and manipulation using different hardware.</div>
+              </div> 
+              {% elif c == 6 %}
+              <div class="role1"><h1>Engineer-Control Systems</h1>
+                
+                <div class="det1">Controls engineers perform a vital role in designing and developing systems for manufacturing operations. They may design layout, materials and information flow, or machine placement. They may also be responsible for increasing production efficiency by evaluating performance and proposing and implementing improvements.</div>
+                </div>  
+      {% elif c == 7 %}
+        <div class="role1"><h1>Pcb Design Engineer</h1>
+                  
+        <div class="det1">As a PCB design engineer, your responsibilities include designing the layout of the unit to incorporate the appropriate components, making recommendations to improve existing designs, and overseeing the actual manufacturing of these products to ensure they meet industry and company standards.</div>
+                  </div>
+        {% elif c == 8 %}
+        <div class="role1"><h1>Rf Engineer</h1>
+                    
+        <div class="det1">An RF engineer, or radio frequency engineer, is a type of electrical engineer who designs, creates and maintains devices that operate using radio waves. They often collaborate with other engineers and industry specialists to develop and manage new technology for wireless devices. </div>
+                    </div>
+      {% elif c == 9 %}
+      <div class="role1" ><h1>Cad Design Engineer</h1>
+                      
+      <div class="det1">A CAD designer uses computer software to create detailed and precise construction plans. They attend meetings with clients to understand project specifications, collaborate with the team to allocate resources, create a timeline, and draft 2D and 3D construction plans using design software, such as AutoCAD.  
+                      Optimizing software by performing maintenance, updates, and upgrades.</div>
+                      </div>   
+    {% endif %}
+    {% if cs == 0 %}
+    <div class="role1"><h1>Data Base Administrator</h1>
+      
+      <div class="det1">Database Administrators ensure that the databases run efficiently and securely. For example, they create or organize systems to store different data types, such as financial information and customer shipping records. They also make sure authorized users can access this information when needed. </div>
+      </div> 
+      {% elif cs == 1 %}
+      <div class="role1"><h1>Software Development Engineer</h1>
+        
+        <div class="det1">A Software Developer designs and builds computer programs that power mobile devices, desktop computers, and even cars. They not only identify user needs but also create new applications for any given market while making improvements based on feedback from users. </div>
+        </div>  
+      {% elif cs == 2 %}
+        <div class="role1"><h1>Cyber Security Engineer</h1>
+          
+          <div class="det1">A Cybersecurity Analyst's responsibilities include reviewing computer networks and identifying any potential vulnerabilities, installing the necessary software in order to protect it from unauthorized access, and documenting detections so that future breaches can be mitigated efficiently. </div>
+          </div>  
+          {% elif cs == 3 %}
+          <div class="role1"><h1>Network Consultant</h1>
+            
+            <div class="det1">The Network Consultant is an experienced and educated professional who certifies network functionality and performance. They are responsible for designing, setting up and maintaining computer networks at either an organization or client location. </div>
+            </div>  
+            {% elif cs == 4 %}
+            <div class="role1"><h1>Software Developer-Front end</h1>
+              
+              <div class="det1">A Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages. </div>
+              </div> 
+              {% elif cs == 5 %}
+              <div class="role1"><h1>Machine Learning Engineer</h1>
+                
+                <div class="det1">A Machine Learning Engineer is responsible for designing and developing machine learning systems, implementing appropriate ML algorithms, and conducting experiments. They possess strong programming skills, knowledge of data science, and expertise in statistics. </div>
+                </div>  
+      {% elif cs == 6 %}
+        <div class="role1"><h1>Data Science Manager</h1>
+                  
+        <div class="det1">The data science manager is responsible for helping the company leverage data, working with the team of data scientists and engineers to provide valuable direction and make informed decisions concerning the product, growth, and engagement. </div>
+                  </div>
+        {% elif cs == 7 %}
+        <div class="role1"><h1>Graphic Designer and Content Writer</h1>
+                    
+        <div class="det1">Collaborate with the content team to create visual elements that complement written content and enhance user engagement. Understanding of SEO principles and best practices in content creation.</div>
+                    </div>
+    {% endif %}
+
+
+    {% if c == 0 %}
+    <div class="role2"><h1>SMTS Circuit Design Engineer</h1>
+      
+      <div class="det2">To evaluate new components and new process. Briefly speaking, the task of an SMT PE is to prepare, implement and monitor the whole SMT assembly process. As electronic technology gets constantly upgraded and higher demands are laid to electronic products, the fundamental responsibility of SMT PE maintains unchanged. </div>
+      </div> 
+    {% elif c == 1 %}
+    <div class="role2"><h1> Robotics</h1>
+      
+      <div class="det2">Designs and develops robotic prototypes. Constructs, configures, tests, and debugs robots and robotic systems. Installs, operates, calibrates, and maintains robots. Ensures that robotic machines operate safely, dependably, and with precision; identifies and implements modifications. </div>
+      </div> 
+      {% elif c == 2 %}
+      <div class="role2"><h1>Embedded Software Engineer</h1>
+        
+        <div class="det2">Embedded developers are skilled software engineers that design and write code to control machines and devices. They specialize in developing programs for specific hardware used in cars, modems, appliances, and cellular devices, among others. They are involved in the entire process of embedded systems development, from design to integration. </div>
+        </div>  
+      {% elif c == 3 %}
+        <div class="role2"><h1>Power Electronics Design Engineer</h1>
+          
+          <div class="det2">Report to Lead Electrical Engineer. Develop and validate power electronics for high power battery charges. Develop and verify digital and analog power electronics control hardware. Record specification designs, drawings, bills of materials and test data.
+          </div>
+          </div>  
+          {% elif c == 4 %}
+          <div class="role2"><h1>Maintenance Engineer Electrical</h1>
+            
+            <div class="det2">The Electrical Maintenance Engineer performs scheduled maintenance and preventative repairs on all electrical systems, equipment, and machinery. The person hired in this position will also review maintenance schedules and adjust them as necessary to keep systems functioning at peak levels. </div>
+            </div>  
+            {% elif c == 5 %}
+            <div class="role2"><h1> Labview Developer</h1>
+              
+              <div class="det2">LabView Programmer will assist in the development of software systems for marine robotics such as seafloor drills and associated systems. The type of projects you will work on include subsea control systems and associated user
+                interfaces, as well as other bespoke systems. You will create the code that controls a product line of 20-foot-tall industrial marine robotic drills. One of the leading purposes of this product is to survey ground conditions of future offshore wind turbine sites, enabling efficient design of green energy offshore construction projects. We work in a structured version-controlled coding environment and have defined software engineering processes. </div>
+              </div> 
+              {% elif c == 6 %}
+              <div class="role2"><h1>Control System Firmware Engineer</h1>
+                
+                <div class="det2">Firmware engineers design, install, and troubleshoot firmware systems and their components. They play an active role in every phase of the firmware development cycle, and must be prepared to adapt systems quickly to meet rapidly changing business needs. </div>
+                </div>  
+      {% elif c == 7 %}
+        <div class="role2"><h1>Altium designer For PCB</h1>
+                  
+        <div class="det2">Create and manage design from product definition to released product with minimal external input. Create board layout design using Altium and Pads.The major duties at this position include PCB layout and fabrication, assembly of circuit boards including soldering / de-soldering surface-mount and through-hole components, winding of transformers .</div>
+                  </div>
+        {% elif c == 8 %}
+        <div class="role2"><h1>Rf Engineer</h1>
+                    
+        <div class="det2">An RF engineer, or radio frequency engineer, is a type of electrical engineer who designs, creates and maintains devices that operate using radio waves. They often collaborate with other engineers and industry specialists to develop and manage new technology for wireless devices. </div>
+                    </div>
+      {% elif c == 9 %}
+      <div class="role2"><h1>CAD CAM Engineer</h1>
+                      
+      <div class="det2">Read and interpret blueprints, sketches, drawings, routing instructions, manuals, and specifications. Understand GD&T and apply it during the programming process. Use of CAD to create part models and geometry as needed.</div>
+                      </div>   
+    {% endif %}
+    <!---<div class="role2"><h1>Embedded Software Engineer</h1>
         <div class="det2">Designing and implementing software
             of embedded devices and systems. Designing, developing,
             coding, testing and debugging system software.
             Analyzing and enhancing efficiency, stability 
             and scalability of system resources.</div>
-        </div>
-    <div class="role3"><h1>Firmware Developer</h1>
+        </div>-->
+    
+        {% if cs == 0 %}
+        <div class="role2"><h1>Database Consultant </h1>
+          
+          <div class="det2">A database consultant is a skilled computer professional responsible for maintaining computer database management and information systems. In this role, your typical job duties include implementing computer databases, testing
+            changes made to databases, and evaluating requirements for storing management information. 
+            </div>
+          </div> 
+          {% elif cs == 1 %}
+          <div class="role2"><h1>Open Source Developer</h1>
+            
+            <div class="det2">The Open Source Developer candidate is responsible for designing and developing Web and command-line tools that are instrumental in automating processes that affect every part of the business.Gathering requirements and engineers solutionsImplementing and integrating a new Linux-based monitoring platform for the data centerWorking with network engineers to initiate or create automated processes for customer infrastructure .</div>
+            </div>  
+          {% elif cs == 2 %}
+            <div class="role2"><h1>Cyber Security Analyst</h1>
+              
+              <div class="det2">A Cybersecurity Analyst's responsibilities include reviewing computer networks and identifying any potential vulnerabilities, installing the necessary software in order to protect it from unauthorized access, and documenting detections so that future breaches can be mitigated efficiently. </div>
+              </div>  
+              {% elif cs == 3 %}
+              <div class="role2"><h1>System Administrator</h1>
+                
+                <div class="det2">System administrators support, troubleshoot, and maintain computer servers and networks. System administrators—also known as sysadmins—are information technology (IT) professionals who make sure an organization's computer systems are functioning and meet the needs of the organization. </div>
+                </div>  
+                {% elif cs == 4 %}
+                <div class="role2"><h1> Software Developer-Back end</h1>
+                  
+                  <div class="det2">Backend developer responsibilities include creating, maintaining, testing, and debugging the entire back end of an application or system. This includes the core application logic, databases, data and application integration, API, and other processes taking place behind the scenes. </div>
+                  </div> 
+                  {% elif cs == 5 %}
+                  <div class="role2"><h1>Data Scientist</h1>
+                    
+                    <div class="det2">Developing software and overseeing
+                    the deployment of applications across platforms.
+                    Performing diagnostic tests and debugging procedures. 
+                    Creating end-user application feedback channels. 
+                    Optimizing software by performing maintenance, updates, and upgrades.</div>
+                    </div>  
+          {% elif cs == 6 %}
+            <div class="role2"><h1>Data Science Consultant</h1>
+                      
+            <div class="det2">|A data science consultant works with organizations to perform analyses and computations that draw insights from collected data. They work with clients to improve their data competencies, analytical skills and business strategies.</div>
+                      </div>
+            {% elif cs == 7 %}
+            <div class="role2"><h1>Graphic Designer</h1>
+                        
+            <div class="det2">The Graphic Designer job description includes the entire process of defining requirements, visualizing and creating graphics including illustrations, logos, layouts and photos. You'll be the one to shape the visual aspects of websites, books, magazines, product packaging, exhibitions and more. </div>
+                        </div>
+        {% endif %}
+    
+        {% if c == 0 %}
+        <div class="role3"><h1>Senior Hardware Design Engineer</h1>
+          
+          <div class="det3">Developing software and overseeing
+          the deployment of applications across platforms.
+          Performing diagnostic tests and debugging procedures. 
+          Creating end-user application feedback channels. 
+          Optimizing software by performing maintenance, updates, and upgrades.</div>
+          </div> 
+        {% elif c == 1 %}
+        <div class="role3"><h1> Robotics</h1>
+          
+          <div class="det3">Developing software and overseeing
+          the deployment of applications across platforms.
+          Performing diagnostic tests and debugging procedures. 
+          Creating end-user application feedback channels. 
+          Optimizing software by performing maintenance, updates, and upgrades.</div>
+          </div> 
+          {% elif c == 2 %}
+          <div class="role3"><h1>Firmware Developer</h1>
+            
+            <div class="det3">Developing software and overseeing
+            the deployment of applications across platforms.
+            Performing diagnostic tests and debugging procedures. 
+            Creating end-user application feedback channels. 
+            Optimizing software by performing maintenance, updates, and upgrades.</div>
+            </div>  
+          {% elif c == 3 %}
+            <div class="role3"><h1>Trainee Power Electronics Design Engineer</h1>
+              
+              <div class="det3">Developing software and overseeing
+              the deployment of applications across platforms.
+              Performing diagnostic tests and debugging procedures. 
+              Creating end-user application feedback channels. 
+              Optimizing software by performing maintenance, updates, and upgrades.</div>
+              </div>  
+              {% elif c == 4 %}
+              <div class="role3"><h1>Power Quality Audit Engineer</h1>
+                
+                <div class="det3">Developing software and overseeing
+                the deployment of applications across platforms.
+                Performing diagnostic tests and debugging procedures. 
+                Creating end-user application feedback channels. 
+                Optimizing software by performing maintenance, updates, and upgrades.</div>
+                </div>  
+                {% elif c == 5 %}
+                <div class="role3"><h1> Labview Test Engineer</h1>
+                  
+                  <div class="det3">Developing software and overseeing
+                  the deployment of applications across platforms.
+                  Performing diagnostic tests and debugging procedures. 
+                  Creating end-user application feedback channels. 
+                  Optimizing software by performing maintenance, updates, and upgrades.</div>
+                  </div> 
+                  {% elif c == 6 %}
+                  <div class="role3"><h1>EV Control System Engineer</h1>
+                    
+                    <div class="det3">Developing software and overseeing
+                    the deployment of applications across platforms.
+                    Performing diagnostic tests and debugging procedures. 
+                    Creating end-user application feedback channels. 
+                    Optimizing software by performing maintenance, updates, and upgrades.</div>
+                    </div>  
+          {% elif c == 7 %}
+            <div class="role3"><h1>Electronic PCB Soldering Technician</h1>
+                      
+            <div class="det3">Developing software and overseeing
+                      the deployment of applications across platforms.
+                      Performing diagnostic tests and debugging procedures. 
+                      Creating end-user application feedback channels. 
+                      Optimizing software by performing maintenance, updates, and upgrades.</div>
+                      </div>
+            {% elif c == 8 %}
+            <div class="role3"><h1>Rf Engineer</h1>
+                        
+            <div class="det3">Developing software and overseeing the deployment of applications across platforms.
+                        Performing diagnostic tests and debugging procedures. 
+                        Creating end-user application feedback channels. 
+                        Optimizing software by performing maintenance, updates, and upgrades.</div>
+                        </div>
+          {% elif c == 9 %}
+          <div class="role3"><h1>Cad Technician</h1>
+                          
+          <div class="det23">Developing software and overseeing the deployment of applications across platforms.
+                          Performing diagnostic tests and debugging procedures.Creating end-user application feedback channels. 
+                          Optimizing software by performing maintenance, updates, and upgrades.</div>
+                          </div>   
+        {% endif %}
+        {% if cs == 0 %}
+        <div class="role3"><h1>Junior Database Administrator</h1>
+          
+          <div class="det3">Developing software and overseeing
+          the deployment of applications across platforms.
+          Performing diagnostic tests and debugging procedures. 
+          Creating end-user application feedback channels. 
+          Optimizing software by performing maintenance, updates, and upgrades.</div>
+          </div> 
+          {% elif cs == 1 %}
+          <div class="role3"><h1>Full Stack Developer</h1>
+            
+            <div class="det3">Developing software and overseeing
+            the deployment of applications across platforms.
+            Performing diagnostic tests and debugging procedures. 
+            Creating end-user application feedback channels. 
+            Optimizing software by performing maintenance, updates, and upgrades.</div>
+            </div>  
+          {% elif cs == 2 %}
+            <div class="role3"><h1>Cyber Security Specialist</h1>
+              
+              <div class="det3">Developing software and overseeing
+              the deployment of applications across platforms.
+              Performing diagnostic tests and debugging procedures. 
+              Creating end-user application feedback channels. 
+              Optimizing software by performing maintenance, updates, and upgrades.</div>
+              </div>  
+              {% elif cs == 3 %}
+              <div class="role3"><h1>Network Operations & Support</h1>
+                
+                <div class="det3">Developing software and overseeing
+                the deployment of applications across platforms.
+                Performing diagnostic tests and debugging procedures. 
+                Creating end-user application feedback channels. 
+                Optimizing software by performing maintenance, updates, and upgrades.</div>
+                </div>  
+                {% elif cs == 4 %}
+                <div class="role3"><h1>Software Developer</h1>
+                  
+                  <div class="det3">Developing software and overseeing
+                  the deployment of applications across platforms.
+                  Performing diagnostic tests and debugging procedures. 
+                  Creating end-user application feedback channels. 
+                  Optimizing software by performing maintenance, updates, and upgrades.</div>
+                  </div> 
+                  {% elif cs == 5 %}
+                  <div class="role3"><h1>AIML Data Scientist</h1>
+                    
+                    <div class="det3">Developing software and overseeing
+                    the deployment of applications across platforms.
+                    Performing diagnostic tests and debugging procedures. 
+                    Creating end-user application feedback channels. 
+                    Optimizing software by performing maintenance, updates, and upgrades.</div>
+                    </div>  
+          {% elif cs == 6 %}
+            <div class="role3"><h1>Data Science Specialist</h1>
+                      
+            <div class="det3">Developing software and overseeing
+                      the deployment of applications across platforms.
+                      Performing diagnostic tests and debugging procedures. 
+                      Creating end-user application feedback channels. 
+                      Optimizing software by performing maintenance, updates, and upgrades.</div>
+                      </div>
+            {% elif cs == 7 %}
+            <div class="role3"><h1>Graphic Designer</h1>
+                        
+            <div class="det3">Developing software and overseeing the deployment of applications across platforms.
+                        Performing diagnostic tests and debugging procedures. 
+                        Creating end-user application feedback channels. 
+                        Optimizing software by performing maintenance, updates, and upgrades.</div>
+                        </div>
+        {% endif %}
+    <!--<div class="role3"><h1>Firmware Developer</h1>
         <div class="det3">Firmware engineers design, install,
             and troubleshoot firmware systems and their components.
             They play an active role in every phase of the firmware development cycle,
             and must be prepared to adapt systems quickly to meet rapidly changing business needs.</div>
+    </div>-->
+    <div class="btn-conteiner">
+      <a class="btn-content" href="{% url 'map'%}">
+        <span class="btn-title">NEXT</span>
+        <span class="icon-arrow">
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span> 
+      </a>
     </div>
     <div class="links">
         <a href="#"><i class="fab fa-facebook" style="color: rgb(0, 0, 0);" ></i></a>
