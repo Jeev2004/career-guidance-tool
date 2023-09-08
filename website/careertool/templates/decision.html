@@ -1,0 +1,227 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career | questions</title>
+    <link rel="stylesheet" href="{%static 'css/decision.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body style="background-color: black;">
+  <nav style="background-color: black;height: 90px; width: 1536px;">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+    <ul >
+       <!--- <li><a href="#home">HOME</a></li>-->
+        <li><a href="{% url 'main' %}">ABOUT US</a></li>
+        <li><a href="{% url 'main' %}">FEEDBACK</a></li>
+        <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </nav>
+  
+  <form method="post">
+    {% csrf_token %}
+  <div class="center">
+    {% if d == '1' %}
+    <div class="box">
+        <p></p>
+      </div>
+        <h2>Beginner:</h2>
+        <li>Limited understanding of databases.</li>
+        <li>Can perform basic CRUD (Create, Read, Update, Delete) operations using SQL.</li>
+        <li>May need guidance for designing simple database schemas.</li>
+        <li>Minimal knowledge of indexing and query optimization.</li>
+        <li>Familiar with basic database tools and interfaces.</li>
+        <h2>Intermediate:</h2>
+        <li>Competent in working with databases.</li>
+        <li>Can design and create moderately complex database structures.</li>
+        <li>Proficient in SQL for querying and data manipulation.</li>
+        <li>Understanding of indexing, normalization, and basic optimization.</li>
+        <li>Comfortable with common database management systems.</li>
+     
+        <h2>Average:</h2>
+        <li>Strong database skills.</li>
+        <li>Capable of designing and optimizing complex database schemas.</li>
+        <li>Proficient in writing advanced SQL queries and stored procedures.</li>
+        <li>Knowledgeable in query optimization techniques.</li>
+        <li>Experienced with multiple database management systems.</li>
+     
+        <h2>Excellent:</h2>
+        <li>Expert in database management and design.</li>
+        <li>Mastery of advanced database concepts and technologies.</li>
+        <li>Proficient in performance tuning, indexing, and scalability.</li>
+        <li>Skilled in database security and data integrity.</li>
+        <li>Can handle large-scale database systems.</li>
+     
+        <h2>Professional:</h2>
+        <li>Expertise in database architecture and management.</li>
+        <li>Proficient in disaster recovery planning and execution.</li>
+        <li>Skilled in data warehousing, ETL processes, and big data technologies.</li>
+        <li>Able to lead and mentor database teams.</li>
+     
+    {% endif %}
+    {% if d == '2' %}
+    <h2>Beginner:</h2>
+    <li>Basic understanding of computer components (CPU, memory, storage).</li>
+    <li>Familiarity with binary and hexadecimal numbering systems.</li>
+    <li>Knowledge of basic CPU operations (fetch, decode, execute).</li>
+    <li>Limited knowledge of computer hardware components.</li>
+    <li>Basic awareness of computer architecture concepts.</li>
+
+ 
+    <h2>Intermediate</h2>
+    <li>Proficient in computer organization and architecture.</li>
+    <li>Strong grasp of CPU design, including pipelining and instruction sets.</li>
+    <li>Familiarity with memory hierarchy (cache, RAM, virtual memory).</li>
+    <li>Understanding of bus architecture and I/O systems.</li>
+    <li>Can write and understand assembly language code.</li>
+    
+    <h2>Average</h2>
+    <li>Strong database skills.</li>
+    <li>Capable of designing and optimizing complex database schemas.</li>
+    <li>Proficient in writing advanced SQL queries and stored procedures.</li>
+    <li>Knowledgeable in query optimization techniques.</li>
+    <li>Experienced with multiple database management systems.</li>
+    `
+ 
+    <h2>Excellent:</h2>
+    <li>Expert in database management and design.</li>
+    <li>Mastery of advanced database concepts and technologies.</li>
+    <li>Proficient in performance tuning, indexing, and scalability.</li>
+    <li>Skilled in database security and data integrity.</li>
+    <li>Can handle large-scale database systems.</li>
+
+    <h2>Professional:</h2>
+    <li>Seasoned professional with extensive experience.</li>
+    <li>Expertise in database architecture and management.</li>
+    <li>Proficient in disaster recovery planning and execution.</li>
+    <li>Skilled in data warehousing, ETL processes, and big data technologies.</li>
+    <li>Able to lead and mentor database teams.</li> 
+ 
+{% endif %}
+{% if d == '3' %}
+<h2>Beginner:</h2>
+<li>Limited understanding of databases.</li>
+<li>Can perform basic CRUD (Create, Read, Update, Delete) operations using SQL.</li>
+<li>May need guidance for designing simple database schemas.</li>
+<li>Minimal knowledge of indexing and query optimization.</li>
+<li>Familiar with basic database tools and interfaces.</li>
+<h2>Intermediate:</h2>
+<li>Competent in working with databases.</li>
+<li>Can design and create moderately complex database structures.</li>
+<li>Proficient in SQL for querying and data manipulation.</li>
+<li>Understanding of indexing, normalization, and basic optimization.</li>
+<li>Comfortable with common database management systems.</li>
+
+<h2>Average:</h2>
+<li>Strong database skills.</li>
+<li>Capable of designing and optimizing complex database schemas.</li>
+<li>Proficient in writing advanced SQL queries and stored procedures.</li>
+<li>Knowledgeable in query optimization techniques.</li>
+<li>Experienced with multiple database management systems.</li>
+
+<h2>Excellent:</h2>
+<li>Expert in database management and design.</li>
+<li>Mastery of advanced database concepts and technologies.</li>
+<li>Proficient in performance tuning, indexing, and scalability.</li>
+<li>Skilled in database security and data integrity.</li>
+<li>Can handle large-scale database systems.</li>
+
+<h2>Professional:</h2>
+<li>Expertise in database architecture and management.</li>
+<li>Proficient in disaster recovery planning and execution.</li>
+<li>Skilled in data warehousing, ETL processes, and big data technologies.</li>
+<li>Able to lead and mentor database teams.</li>
+
+{% endif %}
+{% if d == '4' %}
+<h2>Beginner:</h2>
+<li>Limited understanding of databases.</li>
+<li>Can perform basic CRUD (Create, Read, Update, Delete) operations using SQL.</li>
+<li>May need guidance for designing simple database schemas.</li>
+<li>Minimal knowledge of indexing and query optimization.</li>
+<li>Familiar with basic database tools and interfaces.</li>
+<h2>Intermediate:</h2>
+<li>Competent in working with databases.</li>
+<li>Can design and create moderately complex database structures.</li>
+<li>Proficient in SQL for querying and data manipulation.</li>
+<li>Understanding of indexing, normalization, and basic optimization.</li>
+<li>Comfortable with common database management systems.</li>
+
+<h2>Average:</h2>
+<li>Strong database skills.</li>
+<li>Capable of designing and optimizing complex database schemas.</li>
+<li>Proficient in writing advanced SQL queries and stored procedures.</li>
+<li>Knowledgeable in query optimization techniques.</li>
+<li>Experienced with multiple database management systems.</li>
+
+<h2>Excellent:</h2>
+<li>Expert in database management and design.</li>
+<li>Mastery of advanced database concepts and technologies.</li>
+<li>Proficient in performance tuning, indexing, and scalability.</li>
+<li>Skilled in database security and data integrity.</li>
+<li>Can handle large-scale database systems.</li>
+
+<h2>Professional:</h2>
+<li>Expertise in database architecture and management.</li>
+<li>Proficient in disaster recovery planning and execution.</li>
+<li>Skilled in data warehousing, ETL processes, and big data technologies.</li>
+<li>Able to lead and mentor database teams.</li>
+
+{% endif %}
+{% if d == '5' %}
+<h2>Beginner:</h2>
+<li>Limited understanding of databases.</li>
+<li>Can perform basic CRUD (Create, Read, Update, Delete) operations using SQL.</li>
+<li>May need guidance for designing simple database schemas.</li>
+<li>Minimal knowledge of indexing and query optimization.</li>
+<li>Familiar with basic database tools and interfaces.</li>
+<h2>Intermediate:</h2>
+<li>Competent in working with databases.</li>
+<li>Can design and create moderately complex database structures.</li>
+<li>Proficient in SQL for querying and data manipulation.</li>
+<li>Understanding of indexing, normalization, and basic optimization.</li>
+<li>Comfortable with common database management systems.</li>
+
+<h2>Average:</h2>
+<li>Strong database skills.</li>
+<li>Capable of designing and optimizing complex database schemas.</li>
+<li>Proficient in writing advanced SQL queries and stored procedures.</li>
+<li>Knowledgeable in query optimization techniques.</li>
+<li>Experienced with multiple database management systems.</li>
+
+<h2>Excellent:</h2>
+<li>Expert in database management and design.</li>
+<li>Mastery of advanced database concepts and technologies.</li>
+<li>Proficient in performance tuning, indexing, and scalability.</li>
+<li>Skilled in database security and data integrity.</li>
+<li>Can handle large-scale database systems.</li>
+
+<h2>Professional:</h2>
+<li>Expertise in database architecture and management.</li>
+<li>Proficient in disaster recovery planning and execution.</li>
+<li>Skilled in data warehousing, ETL processes, and big data technologies.</li>
+<li>Able to lead and mentor database teams.</li>
+
+{% endif %}
+  </div>
+  </div>
+
+  
+
+  <!--<footer>
+        <a href="#"><i class="fab fa-facebook" style="color: rgb(64, 65, 47);" ></i></a>
+        <a href="#"><i class="fab fa-twitter" style="color: rgb(64, 65, 47);"></i></a>
+        <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" style="color: rgb(64, 65, 47);"></i></a>
+  </footer>-->
+
+
+  <script>
+    function myFunction() {
+      location.replace("{% url 'q2'%}")
+    }
+    </script>
+</form> 
+    
+</body>
+</html>

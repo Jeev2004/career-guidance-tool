@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title> 
+    <link rel="stylesheet" href="{%static 'css/roles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav style="background-color: black;height: 90px; ">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+    <ul >
+       <!--- <li><a href="#home">HOME</a></li>-->
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#feedback">FEEDBACK</a></li>
+        <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </nav> 
+  <div class="main">
+    <div class="sub1">
+        <h1>Welcome Pilots</h1>
+        <h3>Pick the Domain of your Interest</h3>
+    </div>
+
+    <a href="{% url 'fieldE' %}" class="img1">
+        <img src="{%static 'img/img1.png'%}" style="height: 100px;width: 100px;">
+        <p>Electronics</p></a>
+    <a href="{% url 'fieldC' %}" class="img2">
+        <img src="{%static 'img/img2.png'%}" style="height: 100px;width: 100px;">
+        <p>Computer<br>Science</p></a>
+  </div>
+</body>
+</html>

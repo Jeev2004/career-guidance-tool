@@ -2,10 +2,16 @@ from careertool import views
 from django.urls import path
 
 urlpatterns = [
-    #path('',views.login,name="login"),
+    path('/login',views.loginpage,name="login"),
     path('',views.main,name="main"),
     path('check',views.check,name="check"),
     path('map',views.map,name="map"),
+    path('roles',views.roles,name="roles"),
+    path('logout',views.logoutpage,name="logout"),
+    path('fieldC',views.fieldC,name="fieldC"),
+    path('fieldE',views.fieldE,name="fieldE"),
+    path('output',views.output,name="output"),
+    path('decision',views.decision,name="decision"),
     path('c1',views.c1,name="c1"),
     path('c2',views.c2,name="c2"),
     path('c3',views.c3,name="c3"),

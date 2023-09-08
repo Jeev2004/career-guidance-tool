@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -157,4 +157,116 @@ nav .menu{
   .card:hover .img-content svg {
     fill: transparent;
   }
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oxanium;
+}
+body{
+  background-color: black;
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  
+  margin-right: 50px;
+
+  
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.main{
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    color: white;
+  
+}
+.des{
+    margin-top: 80px;
+    position: absolute;
+    padding: 100px 100px 100px 100px;
+    background-color: #c7faa2;
+}
+.det{
+    position: relative;
+    text-align: center;
+    margin-top: 550px;
+    color: white;
+}
+.sal,#c1{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: white;
+}
+.com{
+    position: absolute;
+    text-align: left;
+    left: 10%;
+    right: 20%;
+    margin-top: 33px;
+    margin-left: 400px;
+    color: #fff;
+}
+   
+.com ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    color: white;
+}
+#side{
+    margin-top: 300px;
+    position: absolute;
+    padding: 100px 100px 500px 100px;
+    background-color: #c7faa2;
+    margin-left: 100px;
+    font-size: 35px;
+}
+.sub{
+    position: relative;
+    margin-top: 400px;
+    margin-left: 650px;
+    color: white;
+
+}
+.sub2{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 650px;
+    color: white;
+
+}

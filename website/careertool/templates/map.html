@@ -1,5 +1,5 @@
 {%load static%}
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
@@ -59,3 +59,3046 @@
   </div>
   </div>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career | Map</title>
+    <link rel="stylesheet" href="{%static 'css/map.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav style="background-color: black;height: 90px; width: 1519px;">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><a href="" style="text-decoration: none; color: white;"><span style="color: #c7faa2;">P</span>athPilot</h1></a>
+    <ul >-->
+       <!--- <li><a href="#home">HOME</a></li>-->
+       <!---<li><a href="#about">ABOUT US</a></li>
+        <li><a href="#feedback">FEEDBACK</a></li>
+        <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </nav> 
+      <div class="main">
+        <h1>Hey Pilots<br></h1>
+        <h4>Here's what we have for you . . .</h4>
+      </div>
+      {% if data %}
+    <p style="color: red;">Rendered: {{ data }}</p>
+    {% endif %}
+    {% if data == '4' %}
+      <div class="des">
+       <h1>Data Base Administrator</h1>
+        <h4>Description<br></h4>
+        <p>A Rr developing new user-facing features,
+            determining the structure and design of web pages, building reusable codes,
+            optimizing page loading times, and using a variety of markup languages to create
+            the web pages.</p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tata Consultancy Services TCS</li>
+            <li>Wipro</li>
+            <li>IBM</li>
+            <li>Capegemini</li>
+            <li>Infosys</li>
+            <li>Accenture</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Hyper Text Markup Language - HTML</li>
+                <li>CSS</li>
+                <li>LESS/SASS</li>
+                <li>Javascript - js</li>
+                <li>GIT and VERSION CONTROL</li>
+                <li>Frame works like REACT, VUE, ANGULAR, DJANGO</li>
+                <li>Bootstrap/Tailwind</li>
+                <li>Websecurity basics</li>
+                <li>Static site generators - next. Js, vueexpress</li>
+              </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Code per annumine Tutorials.</li>
+                <li>Fireship.</li>
+            </ul>
+        </div>
+        {% endif %}
+</body>
+</html>-->
+{%load static%}
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title> 
+    <link rel="stylesheet" href="{%static 'css/map.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+    <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="#">PathPilot</a>
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>    
+  <h1 style="color: red; margin-top: 3em; font-weight:800; margin-left: 5.3em;">Road map</h1>
+       
+  <div class="card-container">
+    <div class="card">
+    <div class="img-content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+    </div>
+    <div class="content">
+      <p class="heading">Card Hover</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipii
+        voluptas ten mollitia pariatur odit, ab
+        minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+        necessitatibus dignissimos molestias.
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="card-container1">
+    <div class="card">
+    <div class="img-content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+    </div>
+    <div class="content">
+      <p class="heading">Card Hover</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipii
+        voluptas ten mollitia pariatur odit, ab
+        minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+        necessitatibus dignissimos molestias.
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career | Map</title>
+    <link rel="stylesheet" href="{%static 'css/map.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav style="background-color: black;height: 90px; width: 1519px;">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+    <ul >
+       <!--- <li><a href="#home">HOME</a></li>-->
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#feedback">FEEDBACK</a></li>
+        <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </nav> 
+      <div class="main">
+        <h1>Hey Pilots<br></h1>
+        <h4>Here's what we have for you . . .</h4>
+      </div>
+      {% if data %}
+    <p style="color:black;">Rendered: {{ data }}</p>
+    {% endif %}
+    
+
+
+        {% if data == '1' %}
+      <div class="des">
+       <h1>Hardware Electronics Design Engineer</h1>
+        <h4>Description<br></h4>
+        <p>Design and develop components such as circuit boards and processors for computers and other devices. They work closely per annuments, conduct tests on prototypes, and oversee the manufacturing process of a variety of hardware components. </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 2.2 Lakhs to ₹ 7.8 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Mistral Solutions</li>
+            <li>Sion Semiconductors </li>
+            <li>Soliton Technologies</li>
+            <li>Cube Software Pvt.</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br>riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Analog and digital circuit design</li>
+                <li>Schematic capture and PCB layout</li>
+                <li>Signal integrity and noise analysis</li>
+                <li>Power supply design</li>
+                <li>Microcontroller/microprocessor integration</li>
+                <li>Embedded systems design</li>
+                <li>Sensor and actuator interfacing</li>
+                <li>Wireless communication protocols (e.g., Bluetooth, Wi-Fi)</li>
+                <li>Firmware development for embedded systems</li>
+              </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Paul's Hardware</li>
+                <li>Afrotechmods</li>
+                <li>Renesas Electronics</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+        {% if data == '2' %}
+      <div class="des">
+       <h1>Industrial Automation</h1>
+        <h4>Description<br></h4>
+        <p>As an industrial automation engineer, your responsibilities include troubleshooting systems and equipment and maintaining software, robotics, and machinery in a manufacturing facility.  </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.5 Lakhs to ₹ 8.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tech Mahindra</li>
+            <li>Rockwell automation</li>
+            <li>Johnson Controls</li>
+            <li>Siemens</li>|
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Programmable Logic Controllers (PLCs)</li>
+                <li>Human-Machine Interface (HMI) design</li>
+                <li>SCADA (Supervisory Control and Data Acquisition) systems</li>
+                <li>Robotics and robotic programming</li>
+                <li>Industrial networking ,Control system design and implementation</li>
+                <li>Industrial cybersecurity</li>
+                <li>Mechatronics and system integration</li>
+                <li>Maintenance and troubleshooting of automated systems</li>
+                <li>Industrial sensors and actuators</li>
+              </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Wartens PLC SCADA Training. </li>
+                <li>inVIEW IIoT Platform / Web SCADA. </li>
+                <li>Automation design and development. </li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+        {% if data == '3' %}
+      <div class="des">
+       <h1>Embedded C++ Developer</h1>
+        <h4>Description<br></h4>
+        <p>Design, build, and maintain efficient embedded systems using C++. Ensure the best possible performance, quality, and responsiveness of applications. Identify bottlenecks and bugs, and devise solutions to mitigate and address those issues.  </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.5 Lakhs to ₹ 9.2 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Samsung Electronics</li>
+            <li>Intel</li>
+            <li>Robert Bosch</li>
+            <li>SanDisk</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>C++ programming for embedded systems</li>
+                <li>Real-time operating systems (RTOS)</li>
+                <li>Microcontroller and microprocessor architectures</li>
+                <li>Low-level hardware interfacing and memory management</li>
+                <li>Embedded software design and architecture</li>
+                <li>Communication protocols (e.g., UART, SPI, I2C, CAN)</li>
+                <li>Interrupt handling and scheduling</li>
+                <li>Hardware abstraction layers (HALs)</li>
+                <li>Unit testing and test-driven development (TDD) for embedded systems</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>The Cherno </li>
+                <li>Neso Academy</li>
+                <li>EmbeddedCraft.org</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+        {% if data == '4' %}
+      <div class="des">
+       <h1>Senior Application Engineer</h1>
+        <h4>Description<br></h4>
+        <p>Senior applications engineer provides assistance to other software engineers in resolving complex production problems on any in-house software application, across multiple hardware platforms and programming languages. </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 4.0 Lakhs to ₹ 22.0 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Accenture</li>
+            <li>Oracle</li>
+            <li>Tata Consultancy Services</li>
+            <li>Capegemini</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Technical product knowledge</li>
+                <li>Customer support and relationship management</li>
+                <li>System integration</li>
+                <li>Problem-solving and troubleshooting</li>
+                <li>Project management</li>
+                <li>Pre-sales and post-sales support</li>
+                <li>Product demonstrations</li>
+                <li>Requirement analysis</li>
+                <li>Cross-functional collaboration</li>
+                <li>Industry and domain expertise</li>
+                <li>Multilingual, Communiation and Marketing skills</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Engineer4Free</li>
+                <li>RealPars</li>
+                <li>Keysight Technologies</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+      {% if data == '5' %}
+      <div class="des">
+       <h1>IT / Technical Operations Specialist</h1>
+        <h4>Description<br></h4>
+        <p>Some of the duties and responsibilities that you perform as a technical operations specialist include tracking and analyzing various operations reports, identifying customer needs to better meet them, and developing and
+        implementing various improvement plans so that the company can operate more efficiently and profitably. </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 4.3 Lakhs to ₹ 18.5 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Amazon</li>
+            <li>Dell Technologies</li>
+            <li>Accenture</li>
+            <li>SAP</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>IT infrastructure management</li>
+                <li>Network configuration and troubleshooting</li>
+                <li>System administration (Windows, Linux, etc.)</li>
+                <li>Cloud services (AWS, Azure, etc.)</li>
+                <li>Virtualization technologies (VMware, Hyper-V)</li>
+                <li>Server deployment and maintenance, Security Protocols</li>
+                <li>Automation and scripting (e.g., PowerShell, Bash)</li>
+                <li>Mobile device management (MDM)</li>
+                <li>User support and helpdesk management</li>
+                <li>Hardware and software troubleshooting</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Eli the Computer Guy</li>
+                <li>PowerCert Animated Videos</li>
+                <li>Professor Messer</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+        {% if data == '6' %}
+      <div class="des">
+       <h1> Labview Engineer</h1>
+        <h4>Description<br></h4>
+        <p>Works per annumdly software. Take on various engineering tasks which will help to acquire new skills. Design software architecture and optimize the performance. Data acquisition and manipulation using different hardware. </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tata Consultancy Services TCS</li>
+            <li>Wipro</li>
+            <li>IBM</li>
+            <li>Capegemini</li>
+            <li>Infosys</li>
+            <li>Accenture</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>LabVIEW programming</li>
+                <li>Virtual Instrumentation</li>
+                <li>Data acquisition and measurement, Control Systems</li>
+                <li>Graphical User Interface (GUI) design</li>
+                <li>Signal processing</li>
+                <li>Hardware interfacing</li>
+                <li>LabVIEW libraries and frameworks</li>
+                <li>Communication protocols (e.g., TCP/IP, USB)</li>
+                <li>Code modularization and reusability</li>
+                <li>Error handling and debugging</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>LabVIEW MakerHub</li>
+                <li>LabVIEW NXG Webinars</li>
+                <li>LabVIEW Forum</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+      {% if data == '7' %}
+      <div class="des">
+       <h1> Engineer-Control Systems</h1>
+        <h4>Description<br></h4>
+        <p>Controls engineers perform a vital role in designing and developing systems for manufacturing operations. They may design layout, materials and information flow, or machine placement. They may also be responsible for increasing production efficiency by evaluating performance and proposing and implementing improvements. </p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tata Consultancy Services TCS</li>
+            <li>Wipro</li>
+            <li>IBM</li>
+            <li>Capegemini</li>
+            <li>Infosys</li>
+            <li>Accenture</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Control theory fundamentals</li>
+                <li>Virtual Instrumentation</li>
+                <li>Data acquisition and measurement, Control Systems</li>
+                <li>Graphical User Interface (GUI) design</li>
+                <li>Signal processing</li>
+                <li>Hardware interfacing</li>
+                <li>LabVIEW libraries and frameworks</li>
+                <li>Communication protocols (e.g., TCP/IP, USB)</li>
+                <li>Code modularization and reusability</li>
+                <li>Error handling and debugging</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>LabVIEW MakerHub</li>
+                <li>LabVIEW NXG Webinars</li>
+                <li>LabVIEW Forum</li>
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if data == '8' %}
+      <div class="des">
+       <h1> Pcb Design Engineer</h1>
+        <h4>Description<br></h4>
+        <p>As a PCB design engineer, your responsibilities include designing the layout of the unit to incorporate the appropriate components,
+           making recommendations to improve existing designs, 
+           and overseeing the actual manufacturing of these products
+            to ensure they meet industry and company standards. </p>      
+          </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tata Consultancy Services TCS</li>
+            <li>Wipro</li>
+            <li>IBM</li>
+            <li>Capegemini</li>
+            <li>Infosys</li>
+            <li>Accenture</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>PCB layout, routing and footprint creation</li>
+                <li>Signal integrity and impedance control</li>
+                <li>EMI/EMC considerations</li>
+                <li>High-speed digital design</li>
+                <li>Power delivery network (PDN) design</li>
+                <li>. PCB fabrication processes and CAD tools proficiency (e.g., Altium Designer, KiCad)
+                  </li>
+                <li>Gerber file generation</li>
+                <li>Design validation and simulation</li>
+                <li>Design for manufacturability (DFM)</li>
+                <li>Design for assembly (DFA)</li>
+            </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Renesas Electronics</li>
+                <li>KiCad</li>
+                <li>Curious Inventor</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+        {% if data == '9' %}
+        <div class="des">
+         <h1> Rf Engineer</h1>
+          <h4>Description<br></h4>
+          <p>An RF engineer, or radio frequency engineer, is a type of electrical engineer who designs, 
+            creates and maintains devices that operate using radio waves. 
+            They often collaborate per annums to develop 
+            and manage new technology for wireless devices. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>RF circuit design</li>
+                  <li>Microwave engineering</li>
+                  <li>Antenna design and analysis</li>
+                  <li>Radio frequency propagation</li>
+                  <li>Wireless communication systems</li>
+                  <li>RF measurement techniques</li>
+                  <li>RF testing and troubleshooting</li>
+                  <li>RF filter design, amplifier design, simulation and modelling</li>
+                  <li>RF signal modulation and demodulation</li>
+                  <li>RF connector and transmission line design</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Afrotechmods</li>
+                  <li>Afrotechmods</li>
+                  <li>Rohde & Schwarz</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '10' %}
+        <div class="des">
+         <h1> Cad Design Engineer</h1>
+          <h4>Description<br></h4>
+          <p>A CAD designer uses computer software to create detailed 
+            and precise construction plans. They attend meetings per annumtions, 
+            collaborate per annuma timeline, and draft 2D 
+            and 3D construction plans using design software, such as AutoCAD </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.5 Lakhs to ₹ 7.0 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Shark Design</li>
+              <li>ATLASON Studio</li>
+              <li>Siemens PLM Software,</li>
+              <li>TurboCAD</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Computer-Aided Design (CAD) software proficiency</li>
+                  <li>2D and 3D modeling techniques</li>
+                  <li>Parametric design and feature-based modeling</li>
+                  <li>Radio frequency propagation</li>
+                  <li>Geometric Dimensioning and Tolerancing (GD&T)</li>
+                  <li>Assembly design and constraints</li>
+                  <li>CAD libraries and standard components</li>
+                  <li>Simulation and analysis (e.g., Finite Element Analysis)</li>
+                  <li>Rapid prototyping and 3D printing considerations</li>
+                  <li>Design for manufacturability (DFM)</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Blender Guru</li>
+                  <li>Lars Christensen</li>
+                  <li>SolidWorks</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '11' %}
+        <div class="des">
+         <h1>Data Base Administrator</h1>
+          <h4>Description<br></h4>
+          <p>Database Administrators ensure that the databases run efficiently and securely.
+             For example, they create or organize systems to store different 
+             data types, such as financial information and customer shipping records. They also make sure authorized users can access this information when needed. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Database Management Systems</li>
+                  <li>Database Design</li>
+                  <li>SQL Programming</li>
+                  <li>Performance Tuning</li>
+                  <li>Backup and Recovery</li>
+                  <li>Indexing Strategies</li>
+                  <li>Query Optimization</li>
+                  <li>Data Security</li>
+                  <li>User Access Management</li>
+                  <li>Data Migration</li>
+                  <li>Cloud Database Management</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Oracle Developers</li>
+                  <li>Traversy Media</li>
+                  <li>The Net Ninja</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '12' %}
+        <div class="des">
+         <h1>Software Development Engineer</h1>
+          <h4>Description<br></h4>
+          <p>A Software Developer designs and builds computer programs that power mobile devices, desktop computers, and even cars. 
+            They not only identify user needs but also create new applications for any given market while making improvements based on feedback from users. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Programming Languages (e.g., Java, Python, C++)</li>
+                  <li>Object-Oriented Design</li>
+                  <li>Algorithms and Data Structures</li>
+                  <li>Problem-Solving</li>
+                  <li>Version Control (e.g., Git)</li>
+                  <li>Debugging and Troubleshooting</li>
+                  <li>Code Optimization and Software Testing</li>
+                  <li>API Design and Integration</li>
+                  <li>Software Architecture Patterns</li>
+                  <li>Databases and SQL</li>
+                  <li>Web Development (Frontend/Backend) and Cloud Computing Concepts</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Programmiper annumchafer</li>
+                  <li>Google Developers</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '13' %}
+        <div class="des">
+         <h1>Cyber Security Engineer</h1>
+          <h4>Description<br></h4>
+          <p>Cybersecurity engineers, sometimes called information security engineers, identify threats and vulnerabilities in systems and software, then apply their skills
+            to developing and implementing high-tech solutions to defend against hacking, malware and ransomware, insider threats and all types of cybercrime.  </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Network Security</li>
+                  <li>Vulnerability Assessment and Threat Detection</li>
+                  <li>Incident Response</li>
+                  <li>Security Architecture</li>
+                  <li>Risk Management</li>
+                  <li>Encryption Techniques</li>
+                  <li>Identity and Access Management</li>
+                  <li>Malware Analysis</li>
+                  <li>Web Application Security, Cloud Security and Mobile Security</li>
+                  <li>Ethical Hacking</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>John Hammond</li>
+                  <li>LiveOverflow</li>
+                  <li>13 cubed</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '14' %}
+        <div class="des">
+         <h1>Network Consultant</h1>
+          <h4>Description<br></h4>
+          <p>The Network Consultant is an experienced and educated professional who certifies network functionality and performance. 
+            They are responsible for designing, setting up and maintaining computer networks at either an organization or client location. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Network Architecture Design and configuration</li>
+                  <li>Routing and Switching</li>
+                  <li>Network Security, Monitoring and Analysis</li>
+                  <li>WAN/LAN Design and Optimization</li>
+                  <li>VPN Setup and Configuration</li>
+                  <li>Firewall Management</li>
+                  <li>Load Balancing</li>
+                  <li>Cloud Networking</li>
+                  <li>IP Addressing and Subnetting</li>
+                  <li>Network Troubleshooting</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>NetworkChuck</li>
+                  <li>Network Direction</li>
+                  <li>Juniper Networks</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '15' %}
+      <div class="des">
+       <h1>Data Base Administrator</h1>
+        <h4>Description<br></h4>
+        <p>A Rr developing new user-facing features,
+            determining the structure and design of web pages, building reusable codes,
+            optimizing page loading times, and using a variety of markup languages to create
+            the web pages.</p>
+      </div>
+      <div class="det">
+        <h2>Let's jump into some details. Shall we ?<br><br></h2>
+      </div>
+      <div class="sal">
+        <h3>Salary<br></h3>
+        <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+      </div>
+        <h3 id="c1">Companies</h3>
+        <div class="com">
+        <ul>
+            Top Companies include<br>
+            <li>Tata Consultancy Services TCS</li>
+            <li>Wipro</li>
+            <li>IBM</li>
+            <li>Capegemini</li>
+            <li>Infosys</li>
+            <li>Accenture</li>
+          </ul>
+        </div>
+        <h1 id="side">Time to start<br> riding</h1>
+        <div class="sub">            
+            <h3>Topics you need to study on<br><br></h3>
+            <ul>
+                <li>Hyper Text Markup Language - HTML</li>
+                <li>CSS</li>
+                <li>LESS/SASS</li>
+                <li>Javascript - js</li>
+                <li>GIT and VERSION CONTROL</li>
+                <li>Frame works like REACT, VUE, ANGULAR, DJANGO</li>
+                <li>Bootstrap/Tailwind</li>
+                <li>Websecurity basics</li>
+                <li>Static site generators - next. Js, vueexpress</li>
+              </ul>
+        </div>
+        <div class="sub2">
+            <h3>Online sources<br><br></h3>
+            <ul>
+                <li>Code per annumine Tutorials.</li>
+                <li>Fireship.</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+          {% if data == '16' %}
+        <div class="des">
+         <h1>Machine Learning Engineer</h1>
+          <h4>Description<br></h4>
+          <p>A Machine Learning Engineer is responsible for designing and developing machine learning systems, implementing appropriate ML algorithms, and conducting experiments.
+             They possess strong programming skills, knowledge of data science, and expertise in statistics. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Programming Languages (e.g., Python, R)</li>
+                  <li>Routing and Switching</li>
+                  <li>Mathematics and Statistics</li>
+                  <li>Data Preprocessing</li>
+                  <li>Machine Learning Algorithms</li>
+                  <li>Deep Learning Frameworks (e.g., TensorFlow, PyTorch)</li>
+                  <li>Feature Engineering and Model Evaluation and Selection</li>
+                  <li>Hyperparameter Tuning and Cross-Validation Techniques</li>
+                  <li>Data Visualizationg</li>
+                  <li>Exploratory Data Analysis (EDA)</li>
+                  <li>Natural Language Processing (NLP) Skills and Computer Vision Skills</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Andrew Ng</li>
+                  <li>Two Minute Papers</li>
+                  <li>Lex Fridman Podcast</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '17' %}
+        <div class="des">
+         <h1>Data Science Manager</h1>
+          <h4>Description<br></h4>
+          <p>The data science manager is responsible for helping the company leverage data, workinper annum  and engineers to provide valuable direction and make informed decisions concerning the product, growth, and engagement. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Leadership and Team Management</li>
+                  <li>Project Planning, Execution and Data Strategy Development</li>
+                  <li>Advanced Data Analysis</li>
+                  <li>Machine Learning Expertise</li>
+                  <li>Data Governance</li>
+                  <li>Budgeting and Resource Allocation</li>
+                  <li>Decision-Making Skills</li>
+                  <li>Data Visualization and Storytelling</li>
+                  <li>Performance Monitoring and KPIs</li>
+                  <li>Data Privacy and Ethics</li>
+                  <li>Problem-Solving and Troubleshooting</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>Harvard Business Review</li>
+                  <li>Databricks</li>
+                  <li>DataCamp</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '18' %}
+        <div class="des">
+         <h1>Graphic Designer and Content Writer</h1>
+          <h4>Description<br></h4>
+          <p>Collaborate per annumnts that complement written content and enhance user engagement.
+             Understanding of SEO principles and best practices in content creation. </p>      
+            </div>
+        <div class="det">
+          <h2>Let's jump into some details. Shall we ?<br><br></h2>
+        </div>
+        <div class="sal">
+          <h3>Salary<br></h3>
+          <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+        </div>
+          <h3 id="c1">Companies</h3>
+          <div class="com">
+          <ul>
+              Top Companies include<br>
+              <li>Tata Consultancy Services TCS</li>
+              <li>Wipro</li>
+              <li>IBM</li>
+              <li>Capegemini</li>
+              <li>Infosys</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+          <h1 id="side">Time to start<br> riding</h1>
+          <div class="sub">            
+              <h3>Topics you need to study on<br><br></h3>
+              <ul>
+                  <li>Visual Communication</li>
+                  <li>Adobe Creative Suite</li>
+                  <li>Typography, Layout Design and Color Theory</li>
+                  <li>Illustration, Branding and Identity</li>
+                  <li>User Experience (UX) Design</li>
+                  <li>Image Editing</li>
+                  <li>Responsive Design</li>
+                  <li>Infographics Design</li>
+                  <li>Vector Graphics</li>
+                  <li>Animation and 3D Design</li>
+              </ul>
+          </div>
+          <div class="sub2">
+              <h3>Online sources<br><br></h3>
+              <ul>
+                  <li>The Futur</li>
+                  <li>Tutvid</li>
+                  <li>Satori Graphics</li>
+              </ul>
+          </div>
+          {% endif %}
+
+
+          {% if data == '19' %}
+          <div class="des">
+           <h1>SMTS Circuit Design Engineer</h1>
+            <h4>Description<br></h4>
+            <p>To evaluate new components and new process. Briefly speaking, 
+              the task of an SMT PE is to prepare, implement and monitor the whole SMT assembly process. As electronic technology gets constantly upgraded 
+              and higher demands are laid to electronic products, the fundamental responsibility of SMT PE maintains unchanged. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.6 Lakhs to ₹ 7.3 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Alpha ICT LLP</li>
+                <li>Cyient</li>
+                <li>Infineon Technologies AG</li>
+                <li>Valeo</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Analog Circuit Design and Digital Circuit Design</li>
+                    <li>PCB Layout</li>
+                    <li>FPGA/ASIC Design</li>
+                    <li>Power Management</li>
+                    <li>High-Speed Design Techniques</li>
+                    <li>Mixed-Signal Design</li>
+                    <li>CAD Software Proficiency (e.g., Cadence, Synopsys)</li>
+                    <li>Simulation Tools (e.g., SPICE)</li>
+                    <li>Cross-Functional Collaboration</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>EEVblog</li>
+                    <li>ElectroBOOM</li>
+                    <li>Paul Falstad</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '20' %}
+          <div class="des">
+           <h1>Robotics</h1>
+            <h4>Description<br></h4>
+            <p>Designs and develops robotic prototypes. Constructs, configures, tests, and debugs robots and robotic systems. 
+              Installs, operates, calibrates, and maintains robots. Ensures that robotic machines operate safely, dependably, and per annumdifications. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.8 Lakhs to ₹ 8.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>ABB Ltd</li>
+                <li>Google</li>
+                <li>FANUC</li>
+                <li>Stryker</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Robotic systems design and integration</li>
+                    <li>Robot kinematics and dynamics</li>
+                    <li>Motion planning and control</li>
+                    <li>Sensor integration (e.g., cameras, LiDAR)</li>
+                    <li>Robot perception and computer vision</li>
+                    <li>Robot programming languages (e.g., ROS, Python)</li>
+                    <li>Human-robot interaction</li>
+                    <li>Robot localization and mapping</li>
+                    <li>Mobile robotics and drones</li>
+                    <li>AI and machine learning in robotics</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>BostonDynamics.</li>
+                    <li>KUKA Robot Group.</li>
+                    <li>ABB Robotics.</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '21' %}
+          <div class="des">
+           <h1>Embedded Software Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Embedded developers are skilled software engineers that design and write code to control machines and devices.
+               They specialize in developing programs for specific hardware used in cars, modems, appliances, and cellular devices, among others. They are involved in the entire process of embedded systems development, from design to integration. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 2 Lakhs to ₹ 10 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Intel Corporation</li>
+                <li>Robert Bosch</li>
+                <li>HCLTech</li>
+                <li>Honeywell</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>C/C++ programming</li>
+                    <li>Real-time operating systems (RTOS)</li>
+                    <li>Microcontroller/microprocessor architectures</li>
+                    <li>Device drivers and peripherals</li>
+                    <li>Memory management in embedded systems</li>
+                    <li>Communication protocols (UART, SPI, I2C, etc.)</li>
+                    <li>Bootloaders and firmware updates</li>
+                    <li>Interrupt handling and scheduling</li>
+                    <li>Embedded debugging tools (e.g., GDB)</li>
+                    <li>IoT protocols and connectivity (e.g., MQTT, CoAP)</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Philippe Leefsma</li>
+                    <li>Embien Technologies</li>
+                    <li>Mentor Embedded</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            
+            {% if data == '22' %}
+          <div class="des">
+           <h1>Power Electronics Design Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Report to Lead Electrical Engineer. Develop and validate power electronics for high power battery charges.
+               Develop and verify digital and analog power electronics control hardware. Record specification designs, drawings, bills of materials and test data.</p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.5 Lakhs to ₹ 12.5 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Cyient</li>
+                <li>Microchip Technology</li>
+                <li>Texas instruments </li>
+                <li>Infineon Technologies AG</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Power electronics circuit design</li>
+                    <li>Power supply topologies</li>
+                    <li>Voltage and current regulation</li>
+                    <li>Thermal management in power electronics</li>
+                    <li>Magnetic components design (inductors, transformers)</li>
+                    <li>Semiconductor devices (MOSFETs, IGBTs, etc.)</li>
+                    <li>Gate driver circuits</li>
+                    <li>Snubber circuits and EMC considerations</li>
+                    <li>Power factor correction (PFC)</li>
+                    <li>Simulation and modeling tools (e.g., PSpice, Simulink)</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Power Electronics Tips</li>
+                    <li>Power Integrations</li>
+                    <li>Analog Devices, Inc.</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '23' %}
+          <div class="des">
+           <h1>Maintenance Engineer Electrical</h1>
+            <h4>Description<br></h4>
+            <p>The Electrical Maintenance Engineer performs scheduled maintenance and preventative repairs on all electrical systems, equipment, and machinery. 
+              The person hired in this position will also review maintenance schedules and adjust them as necessary to keep systems functioning at peak levels. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1 Lakhs to ₹ 6.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>NTPC Limited</li>
+                <li>Philips</li>
+                <li>Bajaj Electricals</li>
+                <li>Polycab India Ltd.</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Electrical Systems Troubleshooting</li>
+                    <li>Equipment Inspection and Preventive Maintenance</li>
+                    <li>Electrical Repairs</li>
+                    <li>Control Systems Knowledge</li>
+                    <li>Power Distribution Systems</li>
+                    <li>Wiring and Circuitry and Multimeter Usage</li>
+                    <li>Electrical Testing Equipment</li>
+                    <li>Motor Control</li>
+                    <li>HVAC Systems Understanding</li>
+                    <li>Control Panel Maintenance and Cross-Functional Collaboration</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>RealPars</li>
+                    <li>Learn Engineering</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '24' %}
+          <div class="des">
+           <h1>Labview Developer</h1>
+            <h4>Description<br></h4>
+            <p>LabView Programmer will assist in the development of software systems for marine robotics such as seafloor drills and associated systems. subsea control systems and associated user
+              interfaces, as well as other bespoke systems. Structured version-controlled coding environment and have defined software engineering processes. 
+              </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>LabVIEW Programming</li>
+                    <li>Virtual Instrumentation</li>
+                    <li>Data Acquisition</li>
+                    <li>User Interface Design</li>
+                    <li>Signal Processing</li>
+                    <li>VI (Virtual Instrument) Architecture</li>
+                    <li>Data Visualization</li>
+                    <li>LabVIEW Libraries and Add-ons</li>
+                    <li>Error Handling and Debugging</li>
+                    <li>Event Handling</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>LabVIEW Mastermind</li>
+                    <li>VI High</li>
+                    <li>Hooovahh - LabVIEW Tutorials</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '25' %}
+          <div class="des">
+           <h1>Control System Firmware Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Firmware engineers design, install, and troubleshoot firmware systems and their components.
+               They play an active role in every phase of the firmware development cycle, and must be prepared to adapt systems quickly to meet rapidly changing business needs.  
+              </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Embedded Programming</li>
+                    <li>Real-Time Operating Systems (RTOS)</li>
+                    <li>Microcontroller/Microprocessor Architecture</li>
+                    <li>C/C++ Programming</li>
+                    <li>Firmware Development</li>
+                    <li>Hardware Abstraction Layer (HAL)</li>
+                    <li>Device Drivers Development</li>
+                    <li>Communication Protocols (e.g., UART, SPI, I2C)</li>
+                    <li>Firmware Debugging</li>
+                    <li>PID Control</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>The Signal Path</li>
+                    <li>Circuit Digest</li>
+                    <li>Electronoobs</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '26' %}
+          <div class="des">
+           <h1>Altium designer For PCB</h1>
+            <h4>Description<br></h4>
+            <p>Create and manage design from product definition to released product per annumyout design using Altium and Pads.
+              The major duties at this position include PCB layout and fabrication, assembly of circuit boards including soldering / de-soldering surface-mount and through-hole components, winding of transformers   
+              </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>User Interface Navigation</li>
+                    <li>Schematic Capture</li>
+                    <li>PCB Layout Design and Footprint Creation</li>
+                    <li>Netlist Management</li>
+                    <li>Copper Pouring and Tracing</li>
+                    <li>Signal Integrity Analysis</li>
+                    <li>Differential Pair Routing</li>
+                    <li>Multi-Layer PCB Design</li>
+                    <li>Gerber File Generation</li>
+                    <li>3D Visualization</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Curious Inventor</li>
+                    <li>The PCB Design Guide</li>
+                    <li>Chris Gammell - The Amp Hour</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '27' %}
+          <div class="des">
+           <h1>Rf Engineer</h1>
+            <h4>Description<br></h4>
+            <p>An RF engineer, or radio frequency engineer, is a type of electrical engineer who designs, creates and maintains devices that operate using radio waves. 
+              They often collaborate per annums to develop and manage new technology for wireless devices. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>RF circuit design</li>
+                    <li>Microwave engineering</li>
+                    <li>Antenna design and analysis</li>
+                    <li>Radio frequency propagation and Wireless communication systems</li>
+                    <li>RF measurement techniques and Spectrum analysis</li>
+                    <li>RF testing and troubleshooting</li>
+                    <li>RF filter design and amplifier design</li>
+                    <li>RF signal modulation and demodulation</li>
+                    <li>RF connector and transmission line design</li>
+                    <li>RF PCB layout</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Afrotechmods</li>
+                    <li>EverythingRF</li>
+                    <li>Rohde & Schwarz</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '28' %}
+          <div class="des">
+           <h1>CAD CAM Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Read and interpret blueprints, sketches, drawings, routing instructions, manuals, and specifications. Understand GD&T and apply it during the programming process.
+               Use of CAD to create part models and geometry as needed. </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.8 Lakhs to ₹ 7.5 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>HCLTech</li>
+                <li>Tech Mahindra</li>
+                <li>Emerson</li>
+                <li>Ford Motor Company</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>CAD and CAM software proficiency</li>
+                    <li>Parametric modeling</li>
+                    <li>Computer-Aided Manufacturing (CAM) principles</li>
+                    <li>CNC programming</li>
+                    <li>Toolpath generation</li>
+                    <li>3D modeling and assembly</li>
+                    <li>CNC machine operation and setup</li>
+                    <li>Geometric Dimensioning and Tolerancing (GD&T)</li>
+                    <li>Design for Manufacturability (DFM)</li>
+                    <li>Simulation and verification of machining processes</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>TITANS of CNC Academy</li>
+                    <li>John Saunders - NYC CNC</li>
+                    <li>Autodesk CAM</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '29' %}
+          <div class="des">
+           <h1>Database Consultant </h1>
+            <h4>Description<br></h4>
+            <p>A database consultant is a skilled computer professional responsible for maintaining computer database management and information systems. In this role, your typical job duties include implementing computer databases, testing
+              changes made to databases, and evaluating requirements for storing management information. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Database management systems (DBMS)</li>
+                    <li>Relational database design</li>
+                    <li>Database optimization and performance tuning</li>
+                    <li>Data modeling and normalization</li>
+                    <li>Data migration and integration</li>
+                    <li>Backup and recovery strategies</li>
+                    <li>Database security and access control</li>
+                    <li>NoSQL databases (e.g., MongoDB, Cassandra)</li>
+                    <li>Big data technologies (e.g., Hadoop, Spark)</li>
+                    <li>Cloud databases (e.g., AWS RDS, Azure SQL Database)</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Oracle Developers</li>
+                    <li>Edureka</li>
+                    <li>The Coding Train</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '30' %}
+          <div class="des">
+           <h1>Open Source Developer</h1>
+            <h4>Description<br></h4>
+            <p>The Open Source Developer candidate is responsible for designing and developing Web and command-line tools that are instrumental in automating processes that affect every part of the business.Gathering requirements and engineers solutionsImplementing
+               and integrating a new Linux-based monitoring platform for the data centerWorking per annum automated processes for customer infrastructure. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '31' %}
+          <div class="des">
+           <h1>Cyber Security Analyst</h1>
+            <h4>Description<br></h4>
+            <p>A Cybersecurity Analyst's responsibilities include reviewing computer networks and identifying any potential vulnerabilities,
+               installing the necessary software in order to protect it from unauthorized access, and documenting detections so that future breaches can be mitigated efficiently.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '32' %}
+          <div class="des">
+           <h1>System Administrator</h1>
+            <h4>Description<br></h4>
+            <p>System administrators support, troubleshoot, and maintain computer servers and networks.
+               System administrators—also known as sysadmins—are information technology (IT) professionals who make sure an organization's computer systems are functioning and meet the needs of the organization.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '33' %}
+          <div class="des">
+            <h1>Software Developer-Back end</h1>
+            <h4>Description<br></h4>
+            <p>Backend developer responsibilities include creating, maintaining, testing,
+               and debugging the entire back end of an application or system. 
+               This includes the core application logic, databases, data and application integration, API, and other processes taking place behind the scenes.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '34' %}
+            <div class="des">
+             <h1>Data Scientist</h1>
+              <h4>Description<br></h4>
+              <p>Monitoring the performance of Junior Data Scientists
+                 and providing themper annum         Selecting and employing advanced statistical procedures to obtain actionable insights. Cross-validating models to ensure their generalizability. 
+                 </p>      
+                </div>
+            <div class="det">
+              <h2>Let's jump into some details. Shall we ?<br><br></h2>
+            </div>
+            <div class="sal">
+              <h3>Salary<br></h3>
+              <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+            </div>
+              <h3 id="c1">Companies</h3>
+              <div class="com">
+              <ul>
+                  Top Companies include<br>
+                  <li>Tata Consultancy Services TCS</li>
+                  <li>Wipro</li>
+                  <li>IBM</li>
+                  <li>Capegemini</li>
+                  <li>Infosys</li>
+                  <li>Accenture</li>
+                </ul>
+              </div>
+              <h1 id="side">Time to start<br> riding</h1>
+              <div class="sub">            
+                  <h3>Topics you need to study on<br><br></h3>
+                  <ul>
+                      <li>Version control systems (e.g., Git)</li>
+                      <li>Source code collaboration</li>
+                      <li>Software licensing (open source licenses)</li>
+                      <li>Documentation writing</li>
+                      <li>Issue tracking and bug reporting</li>
+                      <li>Programming languages (relevant to the project)</li>
+                      <li>API development and usage</li>
+                      <li>Release and package management</li>
+                      <li>Licensing compliance</li>
+                      <li>Problem-solving and debugging</li>
+                  </ul>
+              </div>
+              <div class="sub2">
+                  <h3>Online sources<br><br></h3>
+                  <ul>
+                      <li>Traversy Media</li>
+                      <li>Tech With Tim</li>
+                      <li>FreeCodeCamp</li>
+                  </ul>
+              </div>
+              {% endif %}
+
+
+
+              {% if data == '35' %}
+          <div class="des">
+           <h1>Data Science Consultant</h1>
+            <h4>Description<br></h4>
+            <p>A data science consultant works per annumomputations that draw insights from collected data.
+               They work per annumies, analytical skills and business strategies.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '36' %}
+          <div class="des">
+           <h1>Graphical Editors</h1>
+            <h4>Description<br></h4>
+            <p>The Graphic Designer job description includes the entire process of defining requirements, 
+              visualizing and creating graphics including illustrations, logos, layouts and photos. You'll be the one to shape the visual aspects of websites, books, magazines, product packaging, exhibitions and more.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '37' %}
+          <div class="des">
+           <h1>Senior Hardware Design Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Responsible for design, component selection, schematic implementation, hardware bring-up, debug and validation.
+               You will collaborate per annumto integrate your deliverables toward release of new products into production. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 4.0 Lakhs to ₹ 18.0 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Soliton Technologies</li>
+                <li>Mistral Solutions</li>
+                <li>Cube Software Pvt.</li>
+                <li>Sion Semiconductors </li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '38' %}
+          <div class="des">
+           <h1>Robotics</h1>
+            <h4>Description<br></h4>
+            <p>Designs and develops robotic prototypes. Constructs, configures, tests, and debugs robots and robotic systems. Installs, operates, calibrates, and maintains robots. 
+              Ensures that robotic machines operate safely, dependably, and per annumdifications.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+
+            {% if data == '39' %}
+          <div class="des">
+           <h1>Firmware Developer</h1>
+            <h4>Description<br></h4>
+            <p>Firmware engineers design, install, and troubleshoot firmware systems and their components. 
+              They play an active role in every phase of the firmware development cycle, and must be prepared to adapt systems quickly to meet rapidly changing business needs.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 2 Lakhs to ₹ 17.0 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Schneider Electric</li>
+                <li>HP Inc.</li>
+                <li>Efftronics Systems</li>
+                <li>Micron Technology</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '40' %}
+          <div class="des">
+           <h1>Trainee Power Electronics Design Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Designs and develops power and control electronic equipment or hardware for produper annum, components or systems.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.0 Lakhs to ₹ 7.5 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Okulo Aerospace</li>
+                <li>AECOM</li>
+                <li>Eaton Corporation</li>
+                <li>Ecozen Solutions</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '41' %}
+          <div class="des">
+           <h1>Power Quality Audit Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Investigate, analyze, and solve power quality related problems at customer locations as an independent operator.Provide recommendations to 
+              Power Delivery and to customers that will mitigate both APC generated and customer imposed power quality problems.
+              Serve as a technical consultant and mediator between customers, vendors, and Power Delivery when dealing per annumblems. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '42' %}
+          <div class="des">
+           <h1>Labview Test Engineer</h1>
+            <h4>Description<br></h4>
+            <p>A member of a cross-functional team that will write the software for the systems that we design. You need to have a thorough understanding of National Instruments’ software and hardware. 
+              You will be part of the complete system development cycle from quoting to design to system build and check-out to delivery and post launch support. 
+              You will be interacting per annumct status to the company’s management team, so communication skills are a must. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '43' %}
+          <div class="des">
+           <h1>EV Control System Engineer</h1>
+            <h4>Description<br></h4>
+            <p>Experience per annum, simulation and tuning of control algorithms,
+               integration and vehicle level testing of components and systems in EV. Good understanding of the performance requirements and benchmarks of various EV systems. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '44' %}
+          <div class="des">
+           <h1>Electronic PCB Soldering Technician</h1>
+            <h4>Description<br></h4>
+            <p>Performs various types of soldering including surface mount, thru-hole, and hand-soldering. Consults production schedule to prepare work area and equipment.
+               Gathers components needed to meet production schedules. Sets up equipment and solders components together. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '45' %}
+          <div class="des">
+           <h1>Rf Engineer</h1>
+            <h4>Description<br></h4>
+            <p>An RF engineer, or radio frequency engineer, is a type of electrical engineer who designs, creates and maintains devices that operate using radio waves. 
+              They often collaborate per annums to develop and manage new technology for wireless devices. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '46' %}
+          <div class="des">
+           <h1>Cad Technician</h1>
+            <h4>Description<br></h4>
+            <p>Following complex instructions and diagrams to create or modify drawings. 
+              Taking verbal direction and implementing into sketches and calculations to produce the final work.
+               Producing plans, elevations, technical details and building layouts. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 2.2 Lakhs to ₹ 7.8 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Target</li>
+                <li>Tech Mahindra</li>
+                <li>HCLTech</li>
+                <li>Emerson</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '47' %}
+          <div class="des">
+           <h1>Junior Database Administrator</h1>
+            <h4>Description<br></h4>
+            <p>This position is responsible for maintaining database applications, ensuring information is accurate 
+              and entered in a timely manner to support NACo departments and program requirements. The position is also responsible for data entry, data structure, report customization, and analysis and data quality control. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '48' %}
+          <div class="des">
+           <h1>Full Stack Developer</h1>
+            <h4>Description<br></h4>
+            <p>Full Stack Developers work in the IT department of a company performing both front- and back-end operations on websites and computer systems. They design front-end website architecture 
+              and work closely per annum ensure website applications collaborate wper annum</p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '49' %}
+          <div class="des">
+           <h1>Cyber Security Specialist</h1>
+            <h4>Description<br></h4>
+            <p>Cyber Security Specialists are responsible for discovering vulnerabilities and risks in networks, 
+              software systems and data centers per annum network data, and ensuring hardware and software applications are updated. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '50' %}
+          <div class="des">
+           <h1>Network Operations & Support</h1>
+            <h4>Description<br></h4>
+            <p>Day-to-day network performance monitoring. Network troubleshooting and fault analysis; hardware troubleshooting and repair. 
+              Trouble ticket generation and response; carrier interface and escalations.
+               Deployment and maintenance of network monitoring, analysis and reporting tools. 
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '51' %}
+          <div class="des">
+           <h1>Software Developer</h1>
+            <h4>Description<br></h4>
+            <p>Researching, designing, implementing, and managing software programs.
+              Testing and evaluating new programsIdentifying areas for modification in existing programs and subsequently developing these modifications.Writing and implementing efficient code.
+              Determining operational practicality.Developing quality assurance procedures.Deploying software tools,
+               processes, and metricsMaintaining and upgrading existing systems.
+               Training users.Working closely per annums and systems analysts.
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '52' %}
+          <div class="des">
+           <h1>AIML Data Scientist</h1>
+            <h4>Description<br></h4>
+            <p>Data mining or extracting usable data from valuable data sources.Using machine learning tools, Carrying out preprocessing of structured and unstructured data.Enhancing data collection procedures to include all relevant information for developing analytic systems.Processing, cleansing, and validating the integrity of data to be used for analysis.Analyzing large amounts of information to find patterns and solutions.
+              Propose solutions and strategies to tackle business challenges.Collaborper annum              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '53' %}
+          <div class="des">
+           <h1>Data Science Specialist</h1>
+            <h4>Description<br></h4>
+            <p>A data scientist is someone who makes value out of data.
+               Such a person proactively fetches information from various sources and analyzes it for better understanding about how the business performs, 
+               and to build AI tools that automate certain processes within the company.
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+
+
+            {% if data == '54' %}
+          <div class="des">
+           <h1>Graphic Designer</h1>
+            <h4>Description<br></h4>
+            <p>The Graphic Designer job description includes the entire process of defining requirements, visualizing and creating graphics including illustrations, logos, layouts and photos.
+               You'll be the one to shape the visual aspects of websites, books, magazines, product packaging, exhibitions and more.  
+               </p>      
+              </div>
+          <div class="det">
+            <h2>Let's jump into some details. Shall we ?<br><br></h2>
+          </div>
+          <div class="sal">
+            <h3>Salary<br></h3>
+            <p><br>Ranges between ₹ 1.2 Lakhs to ₹ 11.6 Lakhs per annum.<br><br></p>
+          </div>
+            <h3 id="c1">Companies</h3>
+            <div class="com">
+            <ul>
+                Top Companies include<br>
+                <li>Tata Consultancy Services TCS</li>
+                <li>Wipro</li>
+                <li>IBM</li>
+                <li>Capegemini</li>
+                <li>Infosys</li>
+                <li>Accenture</li>
+              </ul>
+            </div>
+            <h1 id="side">Time to start<br> riding</h1>
+            <div class="sub">            
+                <h3>Topics you need to study on<br><br></h3>
+                <ul>
+                    <li>Version control systems (e.g., Git)</li>
+                    <li>Source code collaboration</li>
+                    <li>Software licensing (open source licenses)</li>
+                    <li>Documentation writing</li>
+                    <li>Issue tracking and bug reporting</li>
+                    <li>Programming languages (relevant to the project)</li>
+                    <li>API development and usage</li>
+                    <li>Release and package management</li>
+                    <li>Licensing compliance</li>
+                    <li>Problem-solving and debugging</li>
+                </ul>
+            </div>
+            <div class="sub2">
+                <h3>Online sources<br><br></h3>
+                <ul>
+                    <li>Traversy Media</li>
+                    <li>Tech With Tim</li>
+                    <li>FreeCodeCamp</li>
+                </ul>
+            </div>
+            {% endif %}
+          
+</body>
+</html>

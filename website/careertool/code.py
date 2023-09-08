@@ -40,3 +40,10 @@ def send(lst):
 def sendcs(clst):
         a = cprediction(clst[0],clst[1],clst[2],clst[3],clst[4],clst[5],clst[6],clst[7])
         return a
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title> 
+    <link rel="stylesheet" href="{%static 'css/fieldC.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+  
+<body>
+  <nav style="background-color: black;height: 90px; width: 1536px; position: relative; top: 0em;" class="head">
+		<h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;font-size: x-large;">P</span>athPilot</h1>
+		<ul >
+		   <!--- <li><a href="#home">HOME</a></li>-->
+			<li><a href="#about">ABOUT US</a></li>
+			<li><a href="#feedback">FEEDBACK</a></li>
+			<li><a href="#login">LOGIN</a></li>
+		</ul>
+	  </nav>
+  <div class="main">
+    <div class="sub1">
+        <h3>Which Field are you interested in ?</h3>
+    </div>
+    <ul class="sub2">
+        <li><a  href="{% url 'output' %}?cs=0" class="f1 s2">Database</a></li>
+        <li><a  href="{% url 'output' %}?cs=1" class="f2 s2">Computer Architecture</a></li>
+        <li><a   href="{% url 'output' %}?cs=2" class="f3 s2">Cyber Security</a></li>
+    </ul>
+
+    <ul class="sub3" >
+        <li><a href="{% url 'output' %}?cs=3" class="f4 s3">Networking</a></li>
+        <li><a href="{% url 'output' %}?cs=4" class="f5 s3">Software Development</a></li>
+        <li><a href="{% url 'output' %}?cs=5" class="f6 s3">AI / ML</a></li>
+    </ul>
+
+   <ul class="sub4">
+        <li><a href="{% url 'output' %}?cs=6" class="f7 s4">Data Science</a></li>
+        <li><a href="{% url 'output' %}?cs=7" class="f8 s4">Graphics Design</a></li>
+    </ul>
+  </div>
+  
+</body>
+</html>

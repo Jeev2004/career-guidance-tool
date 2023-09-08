@@ -8,26 +8,22 @@
     <link rel="stylesheet" href="{%static 'css/questions.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
-<body style="background-color:rgb(196, 181, 160);">
-     <nav>
-    <div class="menu">
-      <div class="logo">
-        <a href="#">PathPilot</a>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-    </div>
+<body>
+  <nav style="background-color: black;height: 90px; width: 1536px;">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+    <ul >
+       <!--- <li><a href="#home">HOME</a></li>-->
+        <li><a href="{% url 'main' %}">ABOUT US</a></li>
+        <li><a href="{% url 'main' %}">FEEDBACK</a></li>
+        <li><a href="#login">LOGIN</a></li>
+    </ul>
   </nav>
   <form method="post">
     {% csrf_token %}
   <div class="center">
     <div class="Ques"><h1>Rate Yourself</h1>
-      <div class="Q1"><h2>How skilled are you in RF Systems ?</h2></div>
-       <div class="drop"><label for="power_electronics">{{ form.category }}</label>
+      <div class="Q1"><h2>How skilled are you in   Computer Architecture ?</h2></div>
+       <div class="drop"><label for="circuit_design">{{ form.category }}</label>
         <!--<select name="circuit_design" id="circuit_design">
            <option value="5">Professional</option>
            <option value="4">Excellent</option>
@@ -36,30 +32,26 @@
            <option value="1">Beginner</option>
            <option value="0">Poor</option>
         </select>--></div>
+        <h4 style="margin-top: 2em;">Cant decide? <a href="{% url 'decision' %}?d=2" style="color: white;">Check here!</a></h4>
   </div>
   </div>
 
-  <div class="wrapper">
-    <div class="link_wrapper">
-        <button class="next" >NEXT</button>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-            </svg>
-          </div>
-    </div>
-  </div>
+  <button class="button"> NEXT
+  </button>
 
   <!--<footer>
         <a href="#"><i class="fab fa-facebook" style="color: rgb(64, 65, 47);" ></i></a>
         <a href="#"><i class="fab fa-twitter" style="color: rgb(64, 65, 47);"></i></a>
         <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" style="color: rgb(64, 65, 47);"></i></a>
   </footer>-->
-</form> 
+
+
   <script>
     function myFunction() {
-      location.replace("{% url 'q6'%}")
+      location.replace("{% url 'q2'%}")
     }
-    </script>   
+    </script>
+</form> 
+    
 </body>
 </html>

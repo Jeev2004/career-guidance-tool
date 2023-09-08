@@ -1,62 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-::selection{
-  color: rgb(196, 181, 160);;
-  background: rgb(10, 6, 0);;
+  font-family: Oxanium;
+  
 }
 nav{
-  position: fixed;
-  background: black;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 12;
-}
-nav .menu{
-  max-width: 1250px;
-  margin: auto;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  
 }
-.menu .logo a{
-  text-decoration: none;
-  color: white;
-  font-size: 35px;
-  font-weight: 600;
-}
-.menu ul{
-  display: inline-flex;
-}
-.menu ul li{
+nav ul li{
+  display: inline-block;
   list-style: none;
-  margin-left: 7px;
-}
-.menu ul li:first-child{
-  margin-left: 0px;
-}
-.menu ul li a{
-  text-decoration: none;
-  color: #050505;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  color: white;
-}
-.menu ul li a:hover{
-    top: 20px;
-    bottom: 100px; ;
-  background: #fffdfa;
-  color: black;
+  margin-right: 50px;
+
+  
 }
 
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.title{
+margin-top: 4em;
+color: #fff;
+}
+.center a{
+  text-decoration: none;
+  color: black;
+}
 .center{
   position: absolute;
   top: 100%;
@@ -231,7 +224,7 @@ nav .menu{
 }
 .links{
     font-size: 30px;
-    color: #050505;
+    color: #fff;
     margin-top: 100px;
     margin-bottom: 100px;
 
