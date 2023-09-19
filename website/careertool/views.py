@@ -49,6 +49,24 @@ def check(request):
         else:
             return redirect('c1')
     return render(request,'check.html')
+def filter(request):
+    if request.method == 'POST':
+        choice = request.POST.get('check')
+        print(choice)
+        if(choice == '1'):
+            return redirect('check')
+        else:
+            return redirect('checkschool')
+    return render(request,'filter.html')
+def checkschool(request):
+    if request.method == 'POST':
+        choice = request.POST.get('check')
+        print(choice)
+        if(choice == '1'):
+            return redirect('check')
+        else:
+            return redirect('checkschool')
+    return render(request,'checkschool.html')
 def c1(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -60,7 +78,7 @@ def c1(request):
             return redirect('c2')
     form = question()
    
-    return render(request,'./cs-qs/c1.html',{'form':form})
+    return render(request,'c1.html',{'form':form})
 def c2(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -71,7 +89,7 @@ def c2(request):
             a.save()
             return redirect('c3')
     form = question()
-    return render(request,'./cs-qs/c2.html',{'form':form})
+    return render(request,'c2.html',{'form':form})
     
 def c3(request):
     if request.method == 'POST':
@@ -83,7 +101,7 @@ def c3(request):
             a.save()
             return redirect('c4')
     form = question()
-    return render(request,'./cs-qs/c3.html',{'form':form})
+    return render(request,'c3.html',{'form':form})
 def c4(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -94,7 +112,7 @@ def c4(request):
             a.save()
             return redirect('c5')
     form = question()
-    return render(request,'./cs-qs/c4.html',{'form':form})
+    return render(request,'c4.html',{'form':form})
 def c5(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -105,7 +123,7 @@ def c5(request):
             a.save()
             return redirect('c6')
     form = question()
-    return render(request,'./cs-qs/c5.html',{'form':form})
+    return render(request,'c5.html',{'form':form})
 def c6(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -116,7 +134,7 @@ def c6(request):
             a.save()
             return redirect('c7')
     form = question()
-    return render(request,'./cs-qs/c6.html',{'form':form})
+    return render(request,'c6.html',{'form':form})
 def c7(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -127,7 +145,7 @@ def c7(request):
             a.save()
             return redirect('c8')
     form = question()
-    return render(request,'./cs-qs/c7.html',{'form':form})
+    return render(request,'c7.html',{'form':form})
 
 def c8(request):
     if request.method == 'POST':
@@ -145,7 +163,7 @@ def c8(request):
             context['cs'] = cs
             return render(request,'output.html',context)
     form = question()
-    return render(request,'./cs-qs/c8.html',{'form':form})
+    return render(request,'c8.html',{'form':form})
     
 def q1(request):
     if request.method == 'POST':
@@ -158,7 +176,7 @@ def q1(request):
             a.save()
             return redirect('q2')
     form = question()
-    return render(request,'./e-qs/q1.html',{'form':form})
+    return render(request,'q1.html',{'form':form})
     
 def q2(request):
     if request.method == 'POST':
@@ -174,7 +192,7 @@ def q2(request):
             
             return redirect('q3')
     form = question()
-    return render(request,'./e-qs/q2.html',{'form':form})
+    return render(request,'q2.html',{'form':form})
 def q3(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -186,7 +204,7 @@ def q3(request):
             print(lst)
             return redirect('q4')
     form = question()
-    return render(request,'./e-qs/q3.html',{'form':form})
+    return render(request,'q3.html',{'form':form})
 def q4(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -197,7 +215,7 @@ def q4(request):
             a.save()
             return redirect('q5')
     form = question()
-    return render(request,'./e-qs/q4.html',{'form':form})
+    return render(request,'q4.html',{'form':form})
 def q5(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -208,7 +226,7 @@ def q5(request):
             a.save()
             return redirect('q6')
     form = question()
-    return render(request,'./e-qs/q5.html',{'form':form})
+    return render(request,'q5.html',{'form':form})
 def q6(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -219,7 +237,7 @@ def q6(request):
             a.save()
             return redirect('q7')
     form = question()
-    return render(request,'./e-qs/q6.html',{'form':form})
+    return render(request,'q6.html',{'form':form})
 def q7(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -230,7 +248,7 @@ def q7(request):
             a.save()
             return redirect('q8')
     form = question()
-    return render(request,'./e-qs/q7.html',{'form':form})
+    return render(request,'q7.html',{'form':form})
 def q8(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -241,7 +259,7 @@ def q8(request):
             a.save()
             return redirect('q9')
     form = question()
-    return render(request,'./e-qs/q8.html',{'form':form})
+    return render(request,'q8.html',{'form':form})
 def q9(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -252,7 +270,7 @@ def q9(request):
             a.save()
             return redirect('q10')
     form = question()
-    return render(request,'./e-qs/q9.html',{'form':form})
+    return render(request,'q9.html',{'form':form})
 def q10(request):
     if request.method == 'POST':
         form = question(request.POST)
@@ -269,7 +287,7 @@ def q10(request):
             return render(request,'output.html',context)
             
     form = question()
-    return render(request,'./e-qs/q10.html',{'form':form})
+    return render(request,'q10.html',{'form':form})
 def output(request):
     if(request.GET.get('cs')):
         cs = int(request.GET.get('cs'))
@@ -280,11 +298,11 @@ def map(request):
     data = request.GET.get('data')
     return render(request,'map.html',{'data':data})
 def roles(request):
-    return render(request,'./roles/roles.html')
+    return render(request,'roles.html')
 def fieldC(request):
-    return render(request,'./roles/fieldC.html')
+    return render(request,'fieldC.html')
 def fieldE(request):
-    return render(request,'./roles/fieldE.html')
+    return render(request,'fieldE.html')
 def decision(request):
     d = request.GET.get('d')
     return render(request,'decision.html',{'d':d})

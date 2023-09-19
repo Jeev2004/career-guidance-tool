@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 import numpy as np
-model=joblib.load(r"C:\Users\MOHANKUMAR\Downloads\model1.joblib")
+model=joblib.load(r"C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\careertool\model1.joblib")
 def eprediction(circuit_design,control_systems,power_electronics,analog_communication,r_f,cpp,electrical_system,cad,pcb,labview):
     
         epred = pd.DataFrame({
@@ -19,7 +19,7 @@ def eprediction(circuit_design,control_systems,power_electronics,analog_communic
         ans = np.array(predict1)
         print("".join(map(str, ans)))
         return ans
-model1=joblib.load(r"C:\Users\MOHANKUMAR\Downloads\model2.joblib")
+model1=joblib.load(r"C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\careertool\model2.joblib")
 def cprediction(data_base,c_architecture,cyber_security,networking,software_development,ai_ml, graphics_designer,data_science):
         cpred = pd.DataFrame({
             'DATABASE': [data_base],
