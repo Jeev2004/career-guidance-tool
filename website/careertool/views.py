@@ -1,12 +1,12 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,cs1,cs2,cs3,cs4,cs5,cs6,cs7,cs8
 from .forms import question
-from .code import send,sendcs
-import logging
+from .code import send,sendcs,get
+from django.views.decorators.csrf import csrf_exempt
+import json
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
-from django.contrib.auth.decorators import login_required
 
 lst =[]
 clst=[]
@@ -306,4 +306,15 @@ def fieldE(request):
 def decision(request):
     d = request.GET.get('d')
     return render(request,'decision.html',{'d':d})
+
+@csrf_exempt 
+def receive_history_data(request):
+    if request.method == 'POST':
+        #try:
+            history_data = json.loads(request.body.decode('utf-8'))
+            get(history_data)
+            return render(request,'extension.html')
+        #except json.JSONDecodeError as e:
+            #return JsonResponse({'message': 'Invalid JSON data.'}, status=400)
+    return render(request,'extension.html')
 

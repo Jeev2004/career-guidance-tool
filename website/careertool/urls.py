@@ -2,7 +2,7 @@ from careertool import views
 from django.urls import path
 
 urlpatterns = [
-    path('/login',views.loginpage,name="login"),
+    path('login',views.loginpage,name="login"),
     path('',views.main,name="main"),
     path('check',views.check,name="check"),
     path('filter',views.filter,name="filter"),
@@ -14,6 +14,7 @@ urlpatterns = [
     path('fieldE',views.fieldE,name="fieldE"),
     path('output',views.output,name="output"),
     path('decision',views.decision,name="decision"),
+    path('api', views.receive_history_data, name='receive-history-data'),
     path('c1',views.c1,name="c1"),
     path('c2',views.c2,name="c2"),
     path('c3',views.c3,name="c3"),

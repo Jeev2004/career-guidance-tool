@@ -85,7 +85,20 @@
     <script>
         function myFunction() {
             location.replace("{% url 'filter'%}")
-          }
+          }     
+          document.getElementById("openExtensionButton").addEventListener("click", function() {
+        // Send a message to the extension to open the popup
+        chrome.runtime.sendMessage(
+            // Replace 'your_extension_id' with your extension's ID
+            'haecbgcfaogfjmfbbmbnodnongkjpnme',
+            { message: "OpenExtensionPopup" },
+            function(response) {
+                console.log("Received response from extension:", response);
+            }
+        );
+    });
+
+
     </script>
 </body>
 </html>
