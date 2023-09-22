@@ -15,7 +15,11 @@
        <!--- <li><a href="#home">HOME</a></li>-->
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#feedback">FEEDBACK</a></li>
-        <li><a href="#login">LOGIN</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}">LOGIN</a></li>
+        {% endif %}
     </ul>
   </nav> 
 
@@ -40,11 +44,11 @@
   <button class="button" > NEXT
   </button>
 
-  <!--<footer>
-        <a href="#"><i class="fab fa-facebook" style="color: rgb(64, 65, 47);" ></i></a>
-        <a href="#"><i class="fab fa-twitter" style="color: rgb(64, 65, 47);"></i></a>
-        <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" style="color: rgb(64, 65, 47);"></i></a>
-  </footer>-->
+  <footer >
+    <a href="#"><i class="fab fa-facebook"  ></i></a>
+    <a href="#"><i class="fab fa-twitter" ></i></a>
+    <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" ></i></a>
+</footer>
 </form> 
   <script>
     function myFunction() {

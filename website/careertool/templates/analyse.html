@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/analyse.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body style="background-color: black;">
+  <nav style="background-color: black;height: 90px; width: 1519px;">
+    <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+    <ul >
+       <!--- <li><a href="#home">HOME</a></li>-->
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#feedback">FEEDBACK</a></li>
+        
+        <li><a href="{% url 'login' %}">LOGIN</a></li>
+        
+    </ul>
+  </nav> 
+  <div class="main">
+    {% if c == 1 %}
+    <h1>Looks Like You Might Be Interested in Computer Science</h1>
+    {% else %}
+    <h1>Looks Like You Might Be Interested in Computer Science</h1>
+    {% endif %}
+  </div>
+  <div class="sub1">
+    {% if a == 1 %}
+    <h2><a href="{% url 'output' %}?cs=0">Want to use AI?</a></h2><br><!--Data Base Administrator-->
+    {% endif %}
+    {% if a == 2 %}
+    <h2><a href="{% url 'output' %}?cs=1">Want to use AI?</a></h2><br><!--Software Development Engineer-->
+    {% endif %}
+    {% if a == 3 %}
+    <h2><a href="{% url 'output' %}?cs=2">Want to use AI?</a></h2><br><!--Cyber Security Engineer-->
+    {% endif %}
+    {% if a == 4 %}
+    <h2><a href="{% url 'output' %}?cs=3">Want to use AI?</a></h2><br><!--Network Consultant-->
+    {% endif %}
+    {% if a == 5 %}
+    <h2><a href="{% url 'output' %}?cs=4">Want to use AI?</a></h2><br><!--Software Developer-Front end-->
+    {% endif %}
+    {% if a == 6 %}
+    <h2><a href="{% url 'output' %}?cs=5">Want to use AI?</a></h2><br><!--Machine Learning Engineer-->
+    {% endif %}
+    {% if a == 7 %}
+    <h2><a href="{% url 'output' %}?cs=6">Want to use AI?</a></h2><br><!--Data Science Manager-->
+    {% endif %}
+    {% if a == 8 %}
+    <h2><a href="{% url 'output' %}?cs=7">Want to use AI?</a></h2><br><!--Graphic Designer and Content Writer-->
+    {% endif %}
+
+
+
+    {% if a == 9 %}
+    <h2><a href="{% url 'output' %}?c=0">Want to use AI?</a></h2><br><!--Hardware Electronics Design Engineer-->
+    {% endif %}
+    {% if a == 10 %}
+    <h2><a href="{% url 'output' %}?c=1">Want to use AI?</a></h2><br><!--Industrial Automation-->
+    {% endif %}
+    {% if a == 11 %}
+    <h2><a href="{% url 'output' %}?c=2">Want to use AI?</a></h2><br><!--Embedded C++ Developer-->
+    {% endif %}
+    {% if a == 12 %}
+    <h2><a href="{% url 'output' %}?c=3">Want to use AI?</a></h2><br><!--Senior Application Engineer-->
+    {% endif %}
+    {% if a == 13 %}
+    <h2><a href="{% url 'output' %}?c=4">Want to use AI?</a></h2><br><!--IT / Technical Operations Specialist-->
+    {% endif %}
+    {% if a == 14 %}
+    <h2><a href="{% url 'output' %}?c=5">Want to use AI?</a></h2><br><!--Labview Enginee-->
+    {% endif %}
+    {% if a == 15 %}
+    <h2><a href="{% url 'output' %}?c=6">Want to use AI?</a></h2><br><!--Engineer-Control Systems-->
+    {% endif %}
+    {% if a == 16 %}
+    <h2><a href="{% url 'output' %}?c=7">Want to use AI?</a></h2><br><!--Pcb Design Engineer-->
+    {% endif %}
+    {% if a == 17 %}
+    <h2><a href="{% url 'output' %}?c=8">Want to use AI?</a></h2><br><!--Rf Engineer-->
+    {% endif %}
+    {% if a == 18 %}
+    <h2><a href="{% url 'output' %}?c=9">Want to use AI?</a></h2><br><!--Cad Design Engineer-->
+    {% endif %}
+
+
+    
+    
+  </div>
+  <div class="home">
+    <p style="color: white; position: absolute;margin-left: 45em; margin-top: 23em;">OR</p>
+    <form action="{% url 'fieldC'%}">
+      <button class = "button" type="submit">
+         <a href="{% url 'fieldC'%}" style="text-decoration: none; color: black;"><h1>BROWSE ROLES</h1></a> </h1>
+      </button>
+  </form>
+  </div>
+</head>
+    
+</body>
+</html>

@@ -15,7 +15,11 @@
        <!--- <li><a href="#home">HOME</a></li>-->
         <li><a href="{% url 'main' %}">ABOUT US</a></li>
         <li><a href="{% url 'main' %}">FEEDBACK</a></li>
-        <li><a href="#login">LOGIN</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}">LOGIN</a></li>
+        {% endif %}
     </ul>
   </nav>
   <i class="fa-duotone fa-gears" style="color: red;"></i> 

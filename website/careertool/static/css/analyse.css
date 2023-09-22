@@ -46,6 +46,53 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
+.main{
+    position: absolute;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 500px;
+    
+}
+.sub1 a{
+    position: absolute;
+    margin-top: 300px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 650px;
+    text-decoration: none;
+    
+}
+.button{
+    position: absolute;
+    background-color: #c7faa2;
+    color: #050505;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 8px;
+    margin-top: 450px;
+    margin-left: 650px;
+}
+/*.arrow{
+  position: absolute;
+  margin-top: -90px;
+  margin-left: 1400px;
+  
+}
+.message{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 800px;
+  color: #e8e1e1;
+
+}
+.button{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -50px;
+}
 .center{
   position: fixed;
   margin-top: 20%;
@@ -147,4 +194,4 @@ footer{
 }
 footer i{
   color: white;
-}
+}*/

@@ -45,7 +45,7 @@ def sendcs(clst):
 def numberofwords(pattern, search_words,df):
     s1 = df['title'].str.count(pattern, flags=re.IGNORECASE).sum()
     s2 = df['url'].str.count(pattern, flags=re.IGNORECASE).sum()
-    #print(f"Number of matches for {', '.join(search_words)}: {s2}")
+    print(f"Number of matches for {', '.join(search_words)}: {s2}")
     return s1 + s2
 
 def get(history_data):
@@ -123,10 +123,97 @@ def get(history_data):
     f2 = numberofwords(pattern, cs,df)
     if(f1>f2):
         print("electronics")
-    elif(f1==f2):
-        print("CS")
+        return 0
     else:
         print("CS")
+        
+        
+        return 1
+def cse(history_data):
+      df = pd.DataFrame(history_data)
+      database = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(database)
+      one = numberofwords(a,database,df)
+      computerarchitecture = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(computerarchitecture)
+      two = numberofwords(a,computerarchitecture,df)
+      cybersecurity = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(cybersecurity)
+      three = numberofwords(a,cybersecurity,df)
+      networking = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(networking)
+      four = numberofwords(a,networking,df)
+      softwaredv = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(softwaredv)
+      five = numberofwords(a,softwaredv,df)
+      aiml = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(aiml)
+      six = numberofwords(a,aiml,df)
+      datascience = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(datascience)
+      seven = numberofwords(a,datascience,df)
+      graphicdesgin = ["SQL",   "NoSQL",        "MySQL",        "PostgreSQL",        "MongoDB",        "SQLite","Database design",        "Data modeling",      "Database management",
+        "Relational databases",        "Non-relational databases",        "Database normalization",        "Indexing",        "ACID properties",       "Transactions",
+        "Big data",        "Data warehousing","Database security",        "Data migration",        "Data backup and recovery"]
+      
+
+      a = '|'.join(graphicdesgin)
+      eight = numberofwords(a,graphicdesgin,df)
+      max = 0
+      if one>max:
+            max = one
+      if two>max:
+            max = two
+      if three>max:
+            max = three
+      if four>max:
+            max = four
+      if five>max:
+            max = five
+      if six>max:
+            max = six
+      if seven>max:
+            max = seven
+      if eight>max:
+            max = eight
+
+      print(max)
+      print("Foo")
+
+      return one
+      
+          
+      
+    
+     
 
 
 

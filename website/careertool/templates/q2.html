@@ -15,7 +15,11 @@
        <!--- <li><a href="#home">HOME</a></li>-->
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#feedback">FEEDBACK</a></li>
-        <li><a href="#login">LOGIN</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}">LOGIN</a></li>
+        {% endif %}
     </ul>
   </nav> 
 
@@ -42,7 +46,11 @@
 
   
 </form> 
-
+<footer >
+  <a href="#"><i class="fab fa-facebook"  ></i></a>
+  <a href="#"><i class="fab fa-twitter" ></i></a>
+  <a href="https://github.com/mohankumar003-1"><i class="fab fa-github" ></i></a>
+</footer>
   <script>
     function myFunction() {
       location.replace("{% url 'q3'%}")

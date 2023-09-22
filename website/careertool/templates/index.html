@@ -29,8 +29,11 @@
           <div class="header" >
             <h1 style="color: #c7faa2; margin-left: 15em; margin-top: 2em; ">DISCOVER YOUR PATH TO <span></span></h1>
             <h2 style="color: white; margin-left: 46em; margin-top: 2em; font-size: small;">Unlock your potential with PathPilot</h2>
-            <button  onclick="myFunction()">
+            <button  onclick="myFunction()" style="margin-left: -9em;">
                 TAKE TEST
+            </button>
+            <button onclick="func()" style="margin-left: 11em;">
+                    AI
             </button>
             <h2 style="color: white; margin-left: 45em; margin-top: 13em; font-size: small;">Want to explore the available  roles? <a href="{% url 'roles' %}" style="text-decoration: none; color: white;">Check out!</a></h2>
           </div>
@@ -85,7 +88,10 @@
     <script>
         function myFunction() {
             location.replace("{% url 'filter'%}")
-          }     
+          }   
+        function func(){
+            location.replace("{% url 'receive-history-data'%}")
+        }  
           document.getElementById("openExtensionButton").addEventListener("click", function() {
         // Send a message to the extension to open the popup
         chrome.runtime.sendMessage(

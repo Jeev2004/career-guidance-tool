@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse,JsonResponse
 from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,cs1,cs2,cs3,cs4,cs5,cs6,cs7,cs8
 from .forms import question
-from .code import send,sendcs,get
+from .code import send,sendcs,get,cse
 from django.views.decorators.csrf import csrf_exempt
 import json
 from django.contrib.auth.models import User
@@ -296,6 +296,7 @@ def output(request):
     return render(request,'output.html',{'c':c})
 def map(request):
     data = request.GET.get('data')
+
     return render(request,'map.html',{'data':data})
 def roles(request):
     return render(request,'roles.html')
@@ -306,15 +307,49 @@ def fieldE(request):
 def decision(request):
     d = request.GET.get('d')
     return render(request,'decision.html',{'d':d})
+def process(request):
+    a = request.GET.get('a')
+    return render(request,'process.html',{'a':a})
+def analyse(request):
+    if (ext[0] == 0):
+        print("ad")
+        c = ext[0]
+        a = ext[1]
+        
+        print("asdasd",a)
 
-@csrf_exempt 
+        return render(request, 'analyse.html',{'c':c,'a':a})
+    else:
+        print("ad")
+        c = ext[0]
+        a = ext[1]
+        print("asdasd",a)
+
+        return render(request, 'analyse.html',{'c':c,'a':a})
+
+    #return render(request, 'analyse.html')
+
+@csrf_exempt
 def receive_history_data(request):
     if request.method == 'POST':
-        #try:
+        try:
             history_data = json.loads(request.body.decode('utf-8'))
-            get(history_data)
-            return render(request,'extension.html')
-        #except json.JSONDecodeError as e:
-            #return JsonResponse({'message': 'Invalid JSON data.'}, status=400)
-    return render(request,'extension.html')
-
+            ext.clear()
+            a = get(history_data)  
+            print(a)
+            ext.append(a)
+            a = cse(history_data)
+            ext.append(a)
+            print(ext)
+            return redirect('analyse')
+            
+        except json.JSONDecodeError as e:
+           
+            return redirect('analyse')
+    
+    return render(request, 'extension.html')
+ext = []
+from django.contrib.auth.models import User
+user_s1_data = s1.objects.filter(author=author)
+for record in user_s1_data:
+    print(f"Circuit Design for {admin.username}: {record.Circuit_Design}")

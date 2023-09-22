@@ -5,20 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career | questions</title>
-    <link rel="stylesheet" href="{%static 'css/questions.css'%}">
+    <link rel="stylesheet" href= "{%static 'css/extension.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
 <body style="background-color: black;">
   <nav style="background-color: black;height: 90px; width: 1536px;">
     <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
     <ul >
-       <!--- <li><a href="#home">HOME</a></li>-->
+       <!--- <li><a href="#home">HOME</a></li>
         <li><a href="{% url 'main' %}">ABOUT US</a></li>
         <li><a href="{% url 'main' %}">FEEDBACK</a></li>
-        <li><a href="#login">LOGIN</a></li>
+        <li><a href="#login">LOGIN</a></li>-->
     </ul>
   </nav>
+  <div class="arrow">
+  <span style='font-size:100px;color: #c7faa2;'>&#8593;</span>
+  </div>
+  <div class="message">
+    <h1>Click on Extensions for Automated Results </h1>
+  </div>
+  <div class="home">
+    <form  method="post">
+      {% csrf_token %}
+      <button class = "button" type="submit" style="top: 17em; " onclick="myFunction()">
+        Check Results
+     </button>
+      <button class = "button" type="submit" style="left: 33em;">
+         Go to Home Page
+      </button>
+  </form>
   
+  </div>
   <!--<footer>
         <a href="#"><i class="fab fa-facebook" style="color: rgb(64, 65, 47);" ></i></a>
         <a href="#"><i class="fab fa-twitter" style="color: rgb(64, 65, 47);"></i></a>
@@ -28,7 +45,7 @@
 
   <script>
     function myFunction() {
-      location.replace("{% url 'q2'%}")
+      location.replace("{% url 'analyse'%}")
     }
     </script>
 </form> 
