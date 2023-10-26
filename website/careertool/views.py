@@ -1,15 +1,17 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 from django.http import HttpResponse,JsonResponse
-from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,cs1,cs2,cs3,cs4,cs5,cs6,cs7,cs8
+from .models import s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,cs1,cs2,cs3,cs4,cs5,cs6,cs7,cs8,UserAnswer
 from .forms import question
-from .code import send,sendcs,get,cse
+from .code import send,sendcs,get,cse,loop
 from django.views.decorators.csrf import csrf_exempt
 import json
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
-
+import logging
+logger = logging.getLogger(__name__)
 lst =[]
 clst=[]
+list1=[]
 def loginpage(request):
     if request.method == 'POST':
 
@@ -39,7 +41,35 @@ def logoutpage(request):
     logout(request)
     return redirect('main')
 def main(request):
-    return render(request,'index.html')
+    last_10_objects = UserAnswer.objects.order_by('-created_at')[:10]
+    data_array = []
+
+# Iterate through the QuerySet and append the desired attributes to the list
+    for obj in last_10_objects:
+        data_array.append(
+        obj.answer_text,
+        
+        # Add more attributes as needed
+    )
+    print(data_array)
+    f = loop(data_array)
+    top = f 
+    print(top) 
+    
+    a = top[0]
+    b = top[1]
+    c = top[2]
+    d = top[3]
+    e = top[4]
+    list1.clear()
+    list1.append(top[0])
+    list1.append(top[1])
+    list1.append(top[2])
+    list1.append(top[3])
+    list1.append(top[4])
+    
+    return render(request,'index.html',{'a':a,'b':b,'c':c,'d':d,'e':e})
+    
 def check(request):
     if request.method == 'POST':
         choice = request.POST.get('check')
@@ -157,11 +187,11 @@ def c8(request):
             a.save()
             print(clst)
             cs = sendcs(clst)
-            #clst.clear()
+            clst.clear()
             print(clst)
-            context = {}
-            context['cs'] = cs
-            return render(request,'output.html',context)
+            answers_with_usernames = [('admin',cs )]
+            f =save_answers_with_usernames(answers_with_usernames)
+            return render(request,'output.html',{'cs':cs,'f':f})
     form = question()
     return render(request,'c8.html',{'form':form})
     
@@ -291,13 +321,29 @@ def q10(request):
 def output(request):
     if(request.GET.get('cs')):
         cs = int(request.GET.get('cs'))
+        
         return render(request,'output.html',{'cs':cs})
     c = int(request.GET.get('c'))
+    answers_with_usernames = [('admin',c )]
+    save_answers_with_usernames(answers_with_usernames)
     return render(request,'output.html',{'c':c})
 def map(request):
     data = request.GET.get('data')
-
-    return render(request,'map.html',{'data':data})
+    print("----")
+    print(ml[0])
+    a = ml[0]
+    print(list1)
+    if a in list1 :
+        a = str(a)
+        if int(data) not in list1:
+            l=1
+            return render(request,'map.html',{'data':data,'a':a,'l':l})
+        return render(request,'map.html',{'data':data,'a':a})
+    
+    if data not in list1: 
+        l=1
+        return render(request,'map.html',{'data':data,'l':l})
+    
 def roles(request):
     return render(request,'roles.html')
 def fieldC(request):
@@ -317,15 +363,18 @@ def analyse(request):
         a = ext[1]
         
         print("asdasd",a)
-
-        return render(request, 'analyse.html',{'c':c,'a':a})
+        
+        answers_with_usernames = [('admin',a )]
+        f =save_answers_with_usernames(answers_with_usernames)
+        return render(request, 'analyse.html',{'c':c,'a':a,'f':f})
     else:
         print("ad")
         c = ext[0]
         a = ext[1]
         print("asdasd",a)
-
-        return render(request, 'analyse.html',{'c':c,'a':a})
+        answers_with_usernames = [('admin',a )]
+        f =save_answers_with_usernames(answers_with_usernames)
+        return render(request, 'analyse.html',{'c':c,'a':a,'f':f})
 
     #return render(request, 'analyse.html')
 
@@ -349,7 +398,35 @@ def receive_history_data(request):
     
     return render(request, 'extension.html')
 ext = []
-from django.contrib.auth.models import User
-user_s1_data = s1.objects.filter(author=author)
-for record in user_s1_data:
-    print(f"Circuit Design for {admin.username}: {record.Circuit_Design}")
+
+from .models import UserAnswer
+from django.contrib.auth.models import User 
+ml = []
+
+def save_answers_with_usernames(answer_list):
+    for username, answer_text in answer_list:
+        try:
+            user = User.objects.get(username=username)
+            print(user)
+            user_answers = UserAnswer.objects.filter(user__username=user)
+            print("HELLO")
+            for answer in user_answers:
+                print(answer.answer_text)
+            last_answer = UserAnswer.objects.filter(user=user).order_by('-created_at').first()
+            if last_answer:
+                print("________________")
+                print(last_answer.answer_text)
+                user_answer = UserAnswer(user=user, answer_text=answer_text)
+                user_answer.save()
+                a = " ".join(last_answer.answer_text)
+                integer_value = int(a.strip('[] ').strip())
+                ml.append(integer_value)
+                print(a)  
+                return last_answer.answer_text
+            else:
+                return "No answers found for this user."
+        except User.DoesNotExist:
+            print(f"User with username '{username}' does not exist.")
+
+
+

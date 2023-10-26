@@ -27,12 +27,134 @@
             </ul>
           </nav> 
           <div class="header" >
-            <h1 style="color: #c7faa2; margin-left: 15em; margin-top: 2em; ">DISCOVER YOUR PATH TO <span></span></h1>
+            <h1 style="color: #c7faa2; position:absolute;margin-left: 15em; margin-top: -2em; ">DISCOVER YOUR PATH TO <span></span></h1>
             <h2 style="color: white; margin-left: 46em; margin-top: 2em; font-size: small;">Unlock your potential with PathPilot</h2>
-            <button  onclick="myFunction()" style="margin-left: -9em;">
+            <h1 style="color: white;">TRENDING JOB ROLES</h1>
+            {% if a == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if a == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if a == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if a == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if a == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if a == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if a == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if a == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if b == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if b == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if b == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if b == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if b == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if b == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if b == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if b == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if c == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if c == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if c == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if c == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if c == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if c == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if c == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if c == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if d == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if d == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if d == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if d == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if d == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if d == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if d == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if d == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if e == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if e == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if e == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if e == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if e == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if e == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if e == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if e == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+
+            <button  onclick="myFunction()" style="position: absolute;margin-left: -9em;margin-top: 17em;">
                 TAKE TEST
             </button>
-            <button onclick="func()" style="margin-left: 11em;">
+            <button onclick="func()" style="position: absolute; margin-left: 11em; margin-top: 17em;">
                     AI
             </button>
             <h2 style="color: white; margin-left: 45em; margin-top: 13em; font-size: small;">Want to explore the available  roles? <a href="{% url 'roles' %}" style="text-decoration: none; color: white;">Check out!</a></h2>

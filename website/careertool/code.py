@@ -209,8 +209,46 @@ def cse(history_data):
       print("Foo")
 
       return one
-      
+def topfive(list):
+     a = loop() 
           
+def loop(a):
+      
+      int_list = [int(item.strip('[]')) for item in a]
+      print(int_list)
+      a = arrange_repeated_first(int_list)
+      print(int_list)
+      return a
+def arrange_repeated_first(lst):
+    seen = set()
+    repeated = []
+    result = []
+
+    for item in lst:
+        if item not in seen:
+            result.append(item)
+            seen.add(item)
+        else:
+            repeated.append(item)
+
+    print(repeated + result)
+    a = remove_duplicates(repeated+result)
+    return a
+def remove_duplicates(lst):
+    unique_items = []
+    result = []
+
+    for item in lst:
+        if item not in unique_items:
+            unique_items.append(item)
+            result.append(item)
+
+    print(result)
+    return result
+
+
+      
+    
       
     
      

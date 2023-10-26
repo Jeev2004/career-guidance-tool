@@ -24,10 +24,13 @@
     {% if c == 1 %}
     <h1>Looks Like You Might Be Interested in Computer Science</h1>
     {% else %}
-    <h1>Looks Like You Might Be Interested in Computer Science</h1>
+    <h1>Looks Like You Might Be Interested in Electronics</h1>
     {% endif %}
   </div>
   <div class="sub1">
+    {%if f == '3'%}
+        <h1 style="color: white;">eureka</h1>
+    {% endif %}
     {% if a == 1 %}
     <h2><a href="{% url 'output' %}?cs=0">Want to use AI?</a></h2><br><!--Data Base Administrator-->
     {% endif %}

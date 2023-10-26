@@ -1,5 +1,12 @@
 from django.db import models
 from django.conf import settings
+from django.utils import timezone
+
+class UserAnswer(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    answer_text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    
 
 class s1(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

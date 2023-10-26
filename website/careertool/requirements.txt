@@ -1,0 +1,5 @@
+Django==4.2.1
+Django==4.2.5
+joblib==1.2.0
+numpy==1.23.2
+pandas==1.5.3

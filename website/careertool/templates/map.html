@@ -230,9 +230,13 @@
     <p style="color:black;">Rendered: {{ data }}</p>
     {% endif %}
     
-
-
-        {% if data == '1' %}
+      {% if a %}
+      <button style="position: absolute;margin-left: -30em; "> <a href="{% url 'map'%}?data={{ a }}">Your last search job is available now!</a></button>
+      {% endif %}
+      {% if l == 1 %}
+        <h1 style="color: white;">It is not currently trending </h1>
+      {% endif %}
+        {% if data == '12' %}
       <div class="des">
        <h1>Hardware Electronics Design Engineer</h1>
         <h4>Description<br></h4>
@@ -281,7 +285,7 @@
         {% endif %}
 
 
-        {% if data == '2' %}
+        {% if data == '13' %}
       <div class="des">
        <h1>Industrial Automation</h1>
         <h4>Description<br></h4>
@@ -330,7 +334,7 @@
         {% endif %}
 
 
-        {% if data == '3' %}
+        {% if data == '14' %}
       <div class="des">
        <h1>Embedded C++ Developer</h1>
         <h4>Description<br></h4>
@@ -379,7 +383,7 @@
         {% endif %}
 
 
-        {% if data == '4' %}
+        {% if data == '15' %}
       <div class="des">
        <h1>Senior Application Engineer</h1>
         <h4>Description<br></h4>
@@ -430,7 +434,7 @@
         {% endif %}
 
 
-      {% if data == '5' %}
+      {% if data == '16' %}
       <div class="des">
        <h1>IT / Technical Operations Specialist</h1>
         <h4>Description<br></h4>
@@ -481,7 +485,7 @@
         {% endif %}
 
 
-        {% if data == '6' %}
+        {% if data == '17' %}
       <div class="des">
        <h1> Labview Engineer</h1>
         <h4>Description<br></h4>
@@ -533,7 +537,7 @@
         {% endif %}
 
 
-      {% if data == '7' %}
+      {% if data == '18' %}
       <div class="des">
        <h1> Engineer-Control Systems</h1>
         <h4>Description<br></h4>
@@ -748,7 +752,7 @@
           {% endif %}
 
 
-          {% if data == '11' %}
+          {% if data == '0' %}
         <div class="des">
          <h1>Data Base Administrator</h1>
           <h4>Description<br></h4>
@@ -803,7 +807,7 @@
           {% endif %}
 
 
-          {% if data == '12' %}
+          {% if data == '1' %}
         <div class="des">
          <h1>Software Development Engineer</h1>
           <h4>Description<br></h4>
@@ -856,7 +860,7 @@
           {% endif %}
 
 
-          {% if data == '13' %}
+          {% if data == '2' %}
         <div class="des">
          <h1>Cyber Security Engineer</h1>
           <h4>Description<br></h4>
@@ -909,7 +913,7 @@
           {% endif %}
 
 
-          {% if data == '14' %}
+          {% if data == '3' %}
         <div class="des">
          <h1>Network Consultant</h1>
           <h4>Description<br></h4>
@@ -962,7 +966,7 @@
           {% endif %}
 
 
-          {% if data == '15' %}
+          {% if data == '14' %}
       <div class="des">
        <h1>Data Base Administrator</h1>
         <h4>Description<br></h4>
@@ -1015,7 +1019,7 @@
         {% endif %}
 
 
-          {% if data == '16' %}
+          {% if data == '5' %}
         <div class="des">
          <h1>Machine Learning Engineer</h1>
           <h4>Description<br></h4>
@@ -1069,7 +1073,7 @@
           {% endif %}
 
 
-          {% if data == '17' %}
+          {% if data == '6' %}
         <div class="des">
          <h1>Data Science Manager</h1>
           <h4>Description<br></h4>
@@ -1122,7 +1126,7 @@
           {% endif %}
 
 
-          {% if data == '18' %}
+          {% if data == '7' %}
         <div class="des">
          <h1>Graphic Designer and Content Writer</h1>
           <h4>Description<br></h4>
@@ -1914,7 +1918,7 @@
 
 
 
-            {% if data == '33' %}
+            {% if data == '4' %}
           <div class="des">
             <h1>Software Developer-Back end</h1>
             <h4>Description<br></h4>

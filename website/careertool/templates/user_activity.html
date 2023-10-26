@@ -1,0 +1,17 @@
+<!-- user_activity.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Activity</title>
+</head>
+<body>
+    <h1>User Activity for {{ user.username }}</h1>
+    <ul>
+        {% for activity in user_activity_records %}
+            <li>{{ activity.activity_type }} at {{ activity.timestamp }}</li>
+        {% empty %}
+            <li>No activity records found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
