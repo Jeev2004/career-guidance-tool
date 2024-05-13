@@ -11,3 +11,112 @@ C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\websi
 C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\website\settings.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5815
+"GET /static/css/style.css HTTP/1.1" 200 6261
+"GET /static/img/four.jpg HTTP/1.1" 200 456216
+"GET /static/img/three.jpg HTTP/1.1" 200 1045107
+"GET /static/img/next.jpg HTTP/1.1" 200 2628617
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5815
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5815
+"GET /static/css/style.css HTTP/1.1" 200 6261
+"GET /static/img/four.jpg HTTP/1.1" 200 456216
+"GET /static/img/three.jpg HTTP/1.1" 200 1045107
+"GET /static/img/next.jpg HTTP/1.1" 200 2628617
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7523
+"GET /api HTTP/1.1" 200 1859
+"GET /static/css/extension.css HTTP/1.1" 200 2808
+"GET / HTTP/1.1" 200 5815
+"GET /filter HTTP/1.1" 200 2459
+"GET /static/css/check.css HTTP/1.1" 200 2579
+"GET /api HTTP/1.1" 200 1859
+"GET / HTTP/1.1" 200 5815
+"GET /roles HTTP/1.1" 200 1260
+"GET /static/css/roles.css HTTP/1.1" 200 1789
+"GET /static/img/img2.png HTTP/1.1" 200 9710
+"GET /static/img/img1.png HTTP/1.1" 200 11294
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5824
+"GET / HTTP/1.1" 200 5824
+"GET /login HTTP/1.1" 200 3303
+"GET /static/css/login.css HTTP/1.1" 200 4787
+"GET /static/js/login.js HTTP/1.1" 200 384
+"GET / HTTP/1.1" 200 5815
+"GET /roles HTTP/1.1" 200 1260
+"GET /fieldE HTTP/1.1" 200 1709
+"GET /static/css/fieldE.css HTTP/1.1" 200 3485
+"GET /fieldC/ HTTP/1.1" 200 1674
+"GET /static/css/fieldC.css HTTP/1.1" 200 3458
+"GET /output?cs=1 HTTP/1.1" 200 3735
+"GET /static/css/output.css HTTP/1.1" 200 4192
+"GET / HTTP/1.1" 200 5815
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5815
+"GET /static/css/style.css HTTP/1.1" 200 6261
+"GET /static/img/next.jpg HTTP/1.1" 200 2628617
+"GET /static/img/four.jpg HTTP/1.1" 200 456216
+"GET /static/img/three.jpg HTTP/1.1" 200 1045107
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7523
+"GET /api HTTP/1.1" 200 1859
+"GET /static/css/extension.css HTTP/1.1" 200 2808
+"POST /api HTTP/1.1" 302 0
+Internal Server Error: /analyse
+Traceback (most recent call last):
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\website\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\website\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\careertool\views.py", line 360, in analyse
+    if (ext[0] == 0):
+IndexError: list index out of range
+"GET /analyse HTTP/1.1" 500 66860
+"GET / HTTP/1.1" 200 5815
+"GET /roles HTTP/1.1" 200 1260
+"GET /static/css/roles.css HTTP/1.1" 200 1789
+"GET /static/img/img1.png HTTP/1.1" 200 11294
+"GET /static/img/img2.png HTTP/1.1" 200 9710
+"GET /filter HTTP/1.1" 200 2459
+"GET /static/css/check.css HTTP/1.1" 200 2579
+"POST /filter HTTP/1.1" 302 0
+"GET /check HTTP/1.1" 200 2439
+"POST /check HTTP/1.1" 302 0
+"GET /q1 HTTP/1.1" 200 2452
+"GET /static/css/questions.css HTTP/1.1" 200 2538
+"POST /q1 HTTP/1.1" 302 0
+"GET /q2 HTTP/1.1" 200 2395
+"POST /q2 HTTP/1.1" 302 0
+"GET /q3 HTTP/1.1" 200 2341
+"POST /q3 HTTP/1.1" 302 0
+"GET /q4 HTTP/1.1" 200 2348
+"POST /q4 HTTP/1.1" 302 0
+"GET /q5 HTTP/1.1" 200 2333
+"POST /q5 HTTP/1.1" 302 0
+"GET /q6 HTTP/1.1" 200 2327
+"POST /q6 HTTP/1.1" 302 0
+"GET /q7 HTTP/1.1" 200 2344
+"POST /q7 HTTP/1.1" 302 0
+"GET /q8 HTTP/1.1" 200 2324
+"POST /q8 HTTP/1.1" 302 0
+"GET /q9 HTTP/1.1" 200 2438
+"POST /q9 HTTP/1.1" 302 0
+"GET /q10 HTTP/1.1" 200 2355
+"POST /q10 HTTP/1.1" 200 3542
+"GET /static/css/output.css HTTP/1.1" 200 4192
+Internal Server Error: /map
+Traceback (most recent call last):
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\website\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\website\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MOHANKUMAR\PROJECTS\Machine Learning\career-guidance-tool\website\careertool\views.py", line 333, in map
+    print(ml[0])
+IndexError: list index out of range
+"GET /map?data=1 HTTP/1.1" 500 67299
+"GET /q10 HTTP/1.1" 200 2355
+"GET / HTTP/1.1" 200 5815
+"GET /api HTTP/1.1" 200 1859
+"GET / HTTP/1.1" 200 5815

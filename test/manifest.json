@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Browsing History Access",
+    "version": "1.0",
+    "description": "Access user's browsing history with consent.",
+    "permissions": [
+        "history",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images/icon16.jpg",
+            "48": "./images/icon48.jpg",
+            "128": "./images/icon128.jpg"
+        }
+    },
+    "icons": {
+        "16": "./images/icon16.jpg",
+        "48": "./images/icon48.jpg",
+        "128": "./images/icon128.jpg"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "externally_connectable": {
+        "matches": ["http://127.0.0.1:8000/api"]
+    }
+    
+}
