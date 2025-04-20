@@ -1,31 +1,29 @@
-# career-guidance-tool
+# Career Guidance Tool
 
-DAY 1: 
--> Creation of Dataset.
--> Building a Machine Learning model using Random Forest classifier.
--> Training the Machine Learning model.
--> Accuracy testing.
--> Visualisation.
+A web-based application designed to guide users in making informed career decisions using a machine learning model and interactive UI.
 
-DAY 2:
--> Building of main page of Website.
--> Acquiring sample websites, introducing animations.
+## Features
 
-DAY 3:
--> Creating Sign In / Sign Up page.
--> Interfacing it with firebase.
--> Creating a database with the Login History and Passwords.
+- Career prediction using a trained Random Forest Classifier  
+- User authentication with Firebase  
+- Personalized results based on user input  
+- Informational resources to help users explore recommended careers  
 
-DAY 4:
--> Creation of Questions page.
--> Creation of Results page.
+## Steps Involved
 
-DAY 5:
--> Creation of information page
+### 1. Dataset and Model Development
+- Collected and prepared the dataset
+- Built and trained a Random Forest classifier
+- Evaluated the model using accuracy and visualizations
 
-DAY 6:
--> Django work started
--> created a joblib file and added to backend
--> connected frontend to back
--> dataset for computer science is beign created
+### 2. Frontend Development
+- Designed the main webpage with animations
+- Developed Sign In / Sign Up pages
+- Integrated Firebase for authentication and database
+- Logged user login history and securely stored credentials
+
+### 3. User Interaction and Output
+- Created a dynamic questionnaire page for user input
+- Developed a results page to display personalized career recommendations
+- Built an information page with career-related content and guidance
 
